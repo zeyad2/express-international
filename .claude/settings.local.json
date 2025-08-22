@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "code",
+      "bash",
+      "WebFetch",
+      "Python",
+      "Code",
+      "mcp__serena",
+      "Bash(npm run build:*)",
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "WebSearch",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

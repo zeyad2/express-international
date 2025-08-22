@@ -1,0 +1,304 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Plane, CheckCircle, ArrowRight, ChevronLeft, Clock, Shield, Globe, Zap } from 'lucide-react';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { useLanguage } from '../contexts/LanguageContext';
+import Accordion, { AccordionItem } from '../components/Accordion';
+
+const AirFreightPage: React.FC = () => {
+  const visibleElements = useIntersectionObserver(0.3);
+  const { t } = useLanguage();
+
+  const processSteps = [
+    {
+      icon: <Plane className="w-8 h-8 text-blue-800" />,
+      title: t('airFreight.step1.title'),
+      description: t('airFreight.step1.desc')
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-blue-800" />,
+      title: t('airFreight.step2.title'),
+      description: t('airFreight.step2.desc')
+    },
+    {
+      icon: <Globe className="w-8 h-8 text-blue-800" />,
+      title: t('airFreight.step3.title'),
+      description: t('airFreight.step3.desc')
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-blue-800" />,
+      title: t('airFreight.step4.title'),
+      description: t('airFreight.step4.desc')
+    }
+  ];
+
+  const features = [
+    t('airFreight.feature1'),
+    t('airFreight.feature2'),
+    t('airFreight.feature3'),
+    t('airFreight.feature4'),
+    t('airFreight.feature5'),
+    t('airFreight.feature6')
+  ];
+
+  const benefits = [
+    t('airFreight.benefit1'),
+    t('airFreight.benefit2'),
+    t('airFreight.benefit3'),
+    t('airFreight.benefit4')
+  ];
+
+  const accordionItems: AccordionItem[] = [
+    {
+      id: 'fast-shipping',
+      title: t('airFreight.accordion1.title'),
+      content: t('airFreight.accordion1.content'),
+      icon: <Zap className="w-6 h-6 text-blue-800" />
+    },
+    {
+      id: 'customs-handling',
+      title: t('airFreight.accordion2.title'),
+      content: t('airFreight.accordion2.content'),
+      icon: <Shield className="w-6 h-6 text-blue-800" />
+    },
+    {
+      id: 'door-to-door',
+      title: t('airFreight.accordion3.title'),
+      content: t('airFreight.accordion3.content'),
+      icon: <Globe className="w-6 h-6 text-blue-800" />
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center">
+              <Link 
+                to="/"
+                className="interactive mr-4 p-2 text-blue-800 hover:bg-blue-50 rounded-lg transition-colors"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </Link>
+              <div className="flex items-center">
+                <Plane className="w-8 h-8 text-blue-800 mr-3" />
+                <span className="text-2xl font-bold text-blue-800">Express International</span>
+              </div>
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <Link to="/" className="text-gray-700 hover:text-blue-800 transition-colors">Home</Link>
+              <Link to="/services/sea-freight" className="text-gray-700 hover:text-blue-800 transition-colors">Sea Freight</Link>
+              <Link to="/services/customs-documentation" className="text-gray-700 hover:text-blue-800 transition-colors">Customs</Link>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-96 bg-cover bg-center bg-no-repeat" 
+               style={{
+                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80")'
+               }}>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div 
+            id="hero-content"
+            data-animate
+            className={`text-center text-white transition-all duration-1000 ${
+              visibleElements.has('hero-content') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <h1 className="text-5xl font-bold mb-4">{t('airFreight.title')}</h1>
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              {t('airFreight.subtitle')}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div 
+              id="about-image"
+              data-animate
+              className={`transition-all duration-1000 ${
+                visibleElements.has('about-image') 
+                  ? 'opacity-100 translate-x-0' 
+                  : 'opacity-0 -translate-x-8'
+              }`}
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1583262375606-b69bb2d2b733?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Cargo aircraft loading"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div 
+              id="about-content"
+              data-animate
+              className={`transition-all duration-1000 ${
+                visibleElements.has('about-content') 
+                  ? 'opacity-100 translate-x-0' 
+                  : 'opacity-0 translate-x-8'
+              }`}
+            >
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Speed Meets Reliability</h2>
+              <p className="text-lg text-gray-700 mb-8">
+                When time is critical, our air freight services deliver. With partnerships across 200+ airports globally, 
+                we provide the fastest and most secure way to transport your valuable cargo anywhere in the world.
+              </p>
+              
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Benefits</h3>
+              <div className="space-y-3">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center">
+                    <CheckCircle className="w-6 h-6 text-green-600 mr-3 flex-shrink-0" />
+                    <span className="text-gray-700">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div 
+            id="process-title"
+            data-animate
+            className={`text-center mb-16 transition-all duration-1000 ${
+              visibleElements.has('process-title') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Air Freight Works</h2>
+            <p className="text-xl text-gray-600">Express delivery in four simple steps</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, index) => (
+              <div 
+                key={index}
+                id={`step-${index}`}
+                data-animate
+                className={`text-center transition-all duration-1000 ${
+                  visibleElements.has(`step-${index}`) 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ transitionDelay: `${index * 200}ms` }}
+              >
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div 
+            id="features-title"
+            data-animate
+            className={`text-center mb-16 transition-all duration-1000 ${
+              visibleElements.has('features-title') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Features</h2>
+            <p className="text-xl text-gray-600">Premium air freight solutions</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div 
+                key={index}
+                id={`feature-${index}`}
+                data-animate
+                className={`bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-1000 ${
+                  visibleElements.has(`feature-${index}`) 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <Clock className="w-8 h-8 text-blue-800 mb-4" />
+                <p className="text-gray-800 font-medium">{feature}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Accordion Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div 
+            className={`text-center mb-16 transition-all duration-1000 ${
+              visibleElements.has('accordion-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            id="accordion-title"
+            data-animate
+          >
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Solutions</h2>
+            <p className="text-xl text-gray-600">Comprehensive air freight solutions tailored to your needs</p>
+          </div>
+
+          <div 
+            className={`max-w-4xl mx-auto transition-all duration-1000 ${
+              visibleElements.has('accordion-content') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            id="accordion-content"
+            data-animate
+            style={{ transitionDelay: '200ms' }}
+          >
+            <Accordion items={accordionItems} allowMultiple={true} />
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-blue-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div 
+            id="cta-content"
+            data-animate
+            className={`transition-all duration-1000 ${
+              visibleElements.has('cta-content') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <h2 className="text-4xl font-bold mb-6">Ready to ship with Air Freight?</h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Experience the fastest shipping solution with our premium air freight services.
+            </p>
+            <Link 
+              to="/#contact"
+              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            >
+              Get Started <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AirFreightPage;
+
