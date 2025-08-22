@@ -1,0 +1,152 @@
+/* Custom animations and styles */
+
+/* Performance optimizations for animations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize animations for performance */
+.animate-optimized {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translateZ(0);
+}
+
+/* SVG animation optimizations */
+svg {
+  shape-rendering: optimizeSpeed;
+}
+
+svg path {
+  vector-effect: non-scaling-stroke;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  svg animateMotion,
+  svg animate,
+  svg animateTransform {
+    animation-play-state: paused !important;
+  }
+}
+
+/* Map container optimizations */
+.map-container {
+  contain: layout style paint;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Smooth transitions for route changes */
+.page-transition {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.airplane-container {
+  position: absolute;
+  top: 20%;
+  left: -80px;
+  animation: flyAcross 20s linear infinite;
+}
+
+.airplane-3d {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+  transform-style: preserve-3d;
+}
+
+.propeller {
+  animation: spin 0.1s linear infinite;
+  transform-origin: 65px 40px;
+}
+
+@keyframes flyAcross {
+  0% {
+    left: -80px;
+    top: 20%;
+    transform: rotate(-10deg) scale(0.8);
+  }
+  25% {
+    top: 15%;
+    transform: rotate(5deg) scale(1);
+  }
+  50% {
+    top: 25%;
+    transform: rotate(-5deg) scale(1.1);
+  }
+  75% {
+    top: 18%;
+    transform: rotate(3deg) scale(1);
+  }
+  100% {
+    left: calc(100% + 80px);
+    top: 22%;
+    transform: rotate(-8deg) scale(0.9);
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite 2s;
+}
+
+.animate-drift {
+  animation: drift 15s linear infinite;
+}
+
+.animate-drift-slow {
+  animation: drift 20s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes drift {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(calc(100vw + 100px)); }
+}
+
+.interactive {
+  cursor: none;
+}
+
+.interactive:hover {
+  cursor: none;
+}
