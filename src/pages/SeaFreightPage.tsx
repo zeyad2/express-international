@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Ship, CheckCircle, ArrowRight, ChevronLeft, Plane, Container, Users, MapPin } from 'lucide-react';
+import { Ship, CheckCircle, ArrowRight, ChevronLeft, Container, Users, MapPin } from 'lucide-react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import { useLanguage } from '../contexts/LanguageContext';
 import Accordion, { AccordionItem } from '../components/Accordion';
+import Header from '../components/Header';
 
 const SeaFreightPage: React.FC = () => {
   const visibleElements = useIntersectionObserver(0.3);
@@ -71,35 +72,12 @@ const SeaFreightPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`flex justify-between items-center py-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-            <div className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
-              <Link 
-                to="/"
-                className={`interactive ${isRTL ? 'ml-4' : 'mr-4'} p-2 text-blue-800 hover:bg-blue-50 rounded-lg transition-colors`}
-              >
-                {isRTL ? <ArrowRight className="w-6 h-6" /> : <ChevronLeft className="w-6 h-6" />}
-              </Link>
-              <div className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <Plane className={`w-8 h-8 text-blue-800 ${isRTL ? 'ml-3' : 'mr-3'}`} />
-                <span className="text-2xl font-bold text-blue-800">Express International</span>
-              </div>
-            </div>
-            <nav className={`hidden md:flex ${isRTL ? 'space-x-reverse space-x-8' : 'space-x-8'}`}>
-              <Link to="/" className="text-gray-700 hover:text-blue-800 transition-colors">{t('nav.home')}</Link>
-              <Link to="/services/air-freight" className="text-gray-700 hover:text-blue-800 transition-colors">{t('services.airFreight')}</Link>
-              <Link to="/services/customs-documentation" className="text-gray-700 hover:text-blue-800 transition-colors">{t('services.customs')}</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-cover bg-center bg-no-repeat" 
+      <section className="relative h-96 bg-cover bg-center bg-no-repeat mt-20" 
                style={{
-                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")'
+                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/public/images/sea-freight-hero.jpg")'
                }}>
         <div className="absolute inset-0 flex items-center justify-center">
           <div 
@@ -133,7 +111,7 @@ const SeaFreightPage: React.FC = () => {
               } ${isRTL ? 'lg:col-start-2' : ''}`}
             >
               <img 
-                src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                src="/src/public/images/aerial-view-container-cargo-ship-sea3-1aa63baa.jpeg"
                 alt="Container ship at port"
                 className="rounded-lg shadow-lg"
               />
@@ -253,8 +231,8 @@ const SeaFreightPage: React.FC = () => {
             id="accordion-title"
             data-animate
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Options</h2>
-            <p className="text-xl text-gray-600">Flexible sea freight solutions for every shipping need</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('service.options')}</h2>
+            <p className="text-xl text-gray-600">{t('seaFreight.optionsDesc')}</p>
           </div>
 
           <div 

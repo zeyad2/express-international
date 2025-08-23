@@ -41,11 +41,11 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
     >
       <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-gray-100 h-full w-full">
         {/* Product Image */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 h-64">
+        <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 h-48">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
             onError={(e) => {
               // Fallback to icon if image fails to load
               e.currentTarget.style.display = 'none';
@@ -54,7 +54,7 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
           />
           
           {/* Fallback icon (hidden by default) */}
-          <div className="hidden absolute inset-0 flex items-center justify-center">
+          <div className="hidden absolute inset-0  items-center justify-center">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500">
               <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -120,13 +120,13 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
               <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-700 rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>
-          <h2 className={`text-5xl font-bold bg-gradient-to-r  from-blue-900 via-red-700 to-blue-900 bg-clip-text text-transparent mb-6 bg-red-400 leading-8${
+          <h2 className={`text-5xl font-bold bg-gradient-to-r   from-blue-900 via-red-700 to-blue-900 bg-clip-text text-transparent mb-6 bg-red-400 leading-8${
             isRTL ? 'text-right' : 'text-left'
           }`}>
             {t('products.title')}
           </h2>
           <p className={`text-xl text-gray-700 max-w-3xl mx-auto text-center ${
-            isRTL ? 'text-right' : 'text-left'
+            isRTL ? 'text-center' : 'text-center'
           }`}>
             {t('products.subtitle')}
           </p>

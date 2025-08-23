@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X} from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
@@ -30,17 +31,13 @@ const Header: React.FC = () => {
           }`}
         >
           {/* Logo */}
-          <div
-            className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}
-          >
-            {/* <Plane className={`w-8 h-8 text-blue-800 ${isRTL ? 'ml-3' : 'mr-3'}`} /> */}
-            {/* <span className="text-2xl font-bold text-blue-800">Express International</span> */}
+          <Link to="/" className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}>
             <img
               src="/src/public/images/logo.png"
-              className="w-[240px] h-[240px] object-contain -my-20 z-10"
+              className="w-[200px] h-[200px] object-contain -my-20 z-10 py-4"
               alt="Express International Logo"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav
@@ -48,36 +45,36 @@ const Header: React.FC = () => {
               isRTL ? "space-x-reverse space-x-8" : "space-x-8"
             }`}
           >
-            <a
-              href="#home"
+            <Link
+              to="/#home"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.home")}
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="/#about"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.about")}
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="/#services"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.services")}
-            </a>
-            <a
-              href="#global-reach"
+            </Link>
+            <Link
+              to="/#global-reach"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.globalReach")}
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/#contact"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.contact")}
-            </a>
+            </Link>
           </nav>
 
           {/* Language Toggle & CTA Button */}
@@ -113,36 +110,41 @@ const Header: React.FC = () => {
                 isRTL ? "items-end" : "items-start"
               }`}
             >
-              <a
-                href="#home"
+              <Link
+                to="/#home"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.home")}
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="/#about"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.about")}
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                to="/#services"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.services")}
-              </a>
-              <a
-                href="#global-reach"
+              </Link>
+              <Link
+                to="/#global-reach"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.globalReach")}
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="/#contact"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.contact")}
-              </a>
+              </Link>
               <div
                 className={`flex items-center gap-3 ${
                   isRTL ? "flex-row-reverse" : ""

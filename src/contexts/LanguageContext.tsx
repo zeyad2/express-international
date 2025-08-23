@@ -90,7 +90,6 @@ const translations = {
     "products.endoscope6.name": "Wireless Endoscope",
     "products.endoscope6.desc":
       "Cutting-edge wireless endoscope technology for enhanced mobility and convenience.",
-    
 
     // Global Reach Section
     "global.title": "Global Network Coverage",
@@ -165,6 +164,7 @@ const translations = {
     "service.features": "Key Features",
     "service.benefits": "Benefits",
     "service.process": "Our Process",
+    "service.options": "Service Options",
     "service.whyChoose": "Why Choose Our Service?",
     "service.stats": "Service Statistics",
 
@@ -187,6 +187,7 @@ const translations = {
     "seaFreight.step4.title": "Delivery",
     "seaFreight.step4.desc":
       "Final delivery to your specified destination with full tracking.",
+    "seaFreight.optionsDesc": "Sea Freight Options",
 
     "seaFreight.feature1": "Full Container Load (FCL) services",
     "seaFreight.feature2": "Less than Container Load (LCL) consolidation",
@@ -246,6 +247,9 @@ const translations = {
     "airFreight.stat3.number": "99.8%",
     "airFreight.stat3.label": "Safe Delivery",
 
+    "airFreight.optionsDesc":
+      "Comprehensive air freight solutions tailored to your needs",
+
     // Customs Documentation Page
     "customs.title": "Customs & Documentation",
     "customs.subtitle": "Expert customs clearance and documentation services",
@@ -284,67 +288,176 @@ const translations = {
     "customs.stat3.number": "100%",
     "customs.stat3.label": "Compliance Rate",
 
+    "customs.optionsDesc": "Complete customs and documentation solutions",
+
     // Import on behalf of others Page
     "importOnBehalf.title": "Import on behalf of others",
-    "importOnBehalf.subtitle": "Professional import services representing your business interests",
-    "importOnBehalf.description": "We provide comprehensive import services on behalf of other businesses, handling all regulatory requirements and documentation to ensure smooth international trade operations.",
-    
+    "importOnBehalf.subtitle":
+      "Professional import services representing your business interests",
+    "importOnBehalf.description":
+      "We provide comprehensive import services on behalf of other businesses, handling all regulatory requirements and documentation to ensure smooth international trade operations.",
+
+    "importOnBehalf.step1.title": "Initial Consultation",
+    "importOnBehalf.step1.desc":
+      "Comprehensive assessment of your import requirements and regulatory needs.",
+    "importOnBehalf.step2.title": "Documentation Review",
+    "importOnBehalf.step2.desc":
+      "Thorough review and preparation of all required import documentation.",
+    "importOnBehalf.step3.title": "Customs Processing",
+    "importOnBehalf.step3.desc":
+      "Professional handling of customs clearance and regulatory compliance.",
+    "importOnBehalf.step4.title": "Final Delivery",
+    "importOnBehalf.step4.desc":
+      "Coordination of final delivery to your specified destination.",
+
+    "importOnBehalf.feature1": "Full regulatory compliance",
+    "importOnBehalf.feature2": "Professional documentation handling",
+    "importOnBehalf.feature3": "Customs clearance expertise",
+    "importOnBehalf.feature4": "End-to-end import management",
+    "importOnBehalf.feature5": "Risk mitigation services",
+    "importOnBehalf.feature6": "Local market expertise",
+
+    "importOnBehalf.benefit1": "Reduced operational overhead",
+    "importOnBehalf.benefit2": "Expert regulatory guidance",
+    "importOnBehalf.benefit3": "Minimized import risks",
+    "importOnBehalf.benefit4": "Focus on core business",
+
     "importOnBehalf.accordion1.title": "Process Overview",
-    "importOnBehalf.accordion1.content": "Our comprehensive import process includes initial consultation, documentation review, customs clearance, and final delivery coordination. We handle every step from start to finish.",
-    
+    "importOnBehalf.accordion1.content":
+      "Our comprehensive import process includes initial consultation, documentation review, customs clearance, and final delivery coordination. We handle every step from start to finish.",
+
     "importOnBehalf.accordion2.title": "Required Documentation",
-    "importOnBehalf.accordion2.content": "Essential documents include commercial invoices, packing lists, certificates of origin, import permits, and any product-specific certifications required by local authorities.",
-    
+    "importOnBehalf.accordion2.content":
+      "Essential documents include commercial invoices, packing lists, certificates of origin, import permits, and any product-specific certifications required by local authorities.",
+
     "importOnBehalf.accordion3.title": "Benefits & Advantages",
-    "importOnBehalf.accordion3.content": "Reduce operational overhead, ensure regulatory compliance, access local market expertise, and minimize import-related risks while focusing on your core business activities.",
+    "importOnBehalf.accordion3.content":
+      "Reduce operational overhead, ensure regulatory compliance, access local market expertise, and minimize import-related risks while focusing on your core business activities.",
+
+    "importOnBehalf.optionsDesc":
+      "Everything you need to know about our import services",
 
     // Exporters Registry Page
     "exportersRegistry.title": "Exporters' Registry",
-    "exportersRegistry.subtitle": "Complete registration and documentation services for exporters",
-    "exportersRegistry.description": "We assist businesses in registering with the exporters' registry, ensuring all documentation and requirements are met for international trade compliance.",
-    
+    "exportersRegistry.subtitle":
+      "Complete registration and documentation services for exporters",
+    "exportersRegistry.description":
+      "We assist businesses in registering with the exporters' registry, ensuring all documentation and requirements are met for international trade compliance.",
+
+    "exportersRegistry.step1.title": "Application Preparation",
+    "exportersRegistry.step1.desc":
+      "Comprehensive preparation of all required registration applications and forms.",
+    "exportersRegistry.step2.title": "Document Compilation",
+    "exportersRegistry.step2.desc":
+      "Systematic compilation and verification of all supporting documents.",
+    "exportersRegistry.step3.title": "Authority Submission",
+    "exportersRegistry.step3.desc":
+      "Professional submission to relevant authorities and regulatory bodies.",
+    "exportersRegistry.step4.title": "Approval Follow-up",
+    "exportersRegistry.step4.desc":
+      "Continuous follow-up and communication until final approval is obtained.",
+
+    "exportersRegistry.feature1": "Complete application assistance",
+    "exportersRegistry.feature2": "Document verification services",
+    "exportersRegistry.feature3": "Regulatory compliance guidance",
+    "exportersRegistry.feature4": "Authority liaison services",
+    "exportersRegistry.feature5": "Status tracking and updates",
+    "exportersRegistry.feature6": "Post-approval support",
+
+    "exportersRegistry.benefit1": "Streamlined registration process",
+    "exportersRegistry.benefit2": "Expert regulatory guidance",
+    "exportersRegistry.benefit3": "Faster approval times",
+    "exportersRegistry.benefit4": "Compliance assurance",
+
     "exportersRegistry.accordion1.title": "Registration Process",
-    "exportersRegistry.accordion1.content": "Our streamlined registration process includes application preparation, document compilation, submission to relevant authorities, and follow-up until approval is obtained.",
-    
+    "exportersRegistry.accordion1.content":
+      "Our streamlined registration process includes application preparation, document compilation, submission to relevant authorities, and follow-up until approval is obtained.",
+
     "exportersRegistry.accordion2.title": "Eligibility Requirements",
-    "exportersRegistry.accordion2.content": "Businesses must have valid commercial registration, tax clearance certificates, and meet specific product or service criteria as defined by local export regulations.",
-    
+    "exportersRegistry.accordion2.content":
+      "Businesses must have valid commercial registration, tax clearance certificates, and meet specific product or service criteria as defined by local export regulations.",
+
     "exportersRegistry.accordion3.title": "Required Documents",
-    "exportersRegistry.accordion3.content": "Documents include commercial registration, tax certificates, company profile, product catalogs, quality certifications, and any industry-specific licenses.",
+    "exportersRegistry.accordion3.content":
+      "Documents include commercial registration, tax certificates, company profile, product catalogs, quality certifications, and any industry-specific licenses.",
+
+    "exportersRegistry.optionsDesc":
+      "Complete guide to exporters' registry registration",
 
     // Customs Clearance Sub-services
     "customsClearance.title": "Customs Clearance & Regulatory Services",
-    "customsClearance.subtitle": "Specialized regulatory services for various industries",
-    "customsClearance.description": "Our comprehensive regulatory services cover multiple sectors including medical devices, cosmetics, and laboratory equipment with full compliance assurance.",
-    
-    "customsClearance.accordion1.title": "Medical Supplies & Devices Registration",
-    "customsClearance.accordion1.content": "Complete approvals and registration services for sterile and non-sterile medical supplies and devices, including FDA compliance, CE marking, and local health authority registrations.",
-    
+    "customsClearance.subtitle":
+      "Specialized regulatory services for various industries",
+    "customsClearance.description":
+      "Our comprehensive regulatory services cover multiple sectors including medical devices, cosmetics, and laboratory equipment with full compliance assurance.",
+
+    "customsClearance.step1.title": "Document Assessment",
+    "customsClearance.step1.desc":
+      "Comprehensive review of all regulatory documentation for compliance requirements.",
+    "customsClearance.step2.title": "Regulatory Research",
+    "customsClearance.step2.desc":
+      "In-depth research of applicable regulations and approval processes.",
+    "customsClearance.step3.title": "Approval Processing",
+    "customsClearance.step3.desc":
+      "Professional submission and follow-up with regulatory authorities.",
+    "customsClearance.step4.title": "Compliance Delivery",
+    "customsClearance.step4.desc":
+      "Final approval delivery with ongoing compliance support.",
+
+    "customsClearance.feature1": "Medical device registrations",
+    "customsClearance.feature2": "Cosmetics approval services",
+    "customsClearance.feature3": "Lab reagent certifications",
+    "customsClearance.feature4": "Import permit processing",
+    "customsClearance.feature5": "Safety compliance assessments",
+    "customsClearance.feature6": "Regulatory consulting services",
+
+    "customsClearance.benefit1": "Expert regulatory guidance",
+    "customsClearance.benefit2": "Faster approval processing",
+    "customsClearance.benefit3": "Full compliance assurance",
+    "customsClearance.benefit4": "Ongoing regulatory support",
+
+    "customsClearance.accordion1.title":
+      "Medical Supplies & Devices Registration",
+    "customsClearance.accordion1.content":
+      "Complete approvals and registration services for sterile and non-sterile medical supplies and devices and local health authority registrations.",
+
     "customsClearance.accordion2.title": "Cosmetics Approvals & Registration",
-    "customsClearance.accordion2.content": "Full cosmetics registration services including safety assessments, ingredient compliance, labeling requirements, and regulatory submissions to health authorities.",
-    
-    "customsClearance.accordion3.title": "Lab Reagents Approvals & Registration",
-    "customsClearance.accordion3.content": "Specialized registration services for laboratory reagents and chemicals, including safety data sheets, import permits, and compliance with laboratory standards.",
+    "customsClearance.accordion2.content":
+      "Full cosmetics registration services including safety assessments, ingredient compliance, labeling requirements, and regulatory submissions to health authorities.",
+
+    "customsClearance.accordion3.title":
+      "Lab Reagents Approvals & Registration",
+    "customsClearance.accordion3.content":
+      "Specialized registration services for laboratory reagents and chemicals, including safety data sheets, import permits, and compliance with laboratory standards.",
+
+    "customsClearance.optionsDesc":
+      "Expert regulatory services across multiple industries",
 
     // Air Freight Accordion Content
     "airFreight.accordion1.title": "Fast Global Shipping",
-    "airFreight.accordion1.content": "Express delivery solutions with guaranteed transit times to over 200 destinations worldwide. Priority handling ensures your urgent shipments reach their destination quickly and safely.",
-    
+    "airFreight.accordion1.content":
+      "Express delivery solutions with guaranteed transit times to over 200 destinations worldwide. Priority handling ensures your urgent shipments reach their destination quickly and safely.",
+
     "airFreight.accordion2.title": "Customs Handling",
-    "airFreight.accordion2.content": "Expert customs clearance services integrated with air freight operations. Pre-clearance options and dedicated customs teams ensure minimal delays at destination airports.",
-    
+    "airFreight.accordion2.content":
+      "Expert customs clearance services integrated with air freight operations. Pre-clearance options and dedicated customs teams ensure minimal delays at destination airports.",
+
     "airFreight.accordion3.title": "Door-to-Door Solutions",
-    "airFreight.accordion3.content": "Complete logistics solutions from pickup at origin to final delivery. Includes ground transportation, warehousing, and last-mile delivery with real-time tracking throughout.",
+    "airFreight.accordion3.content":
+      "Complete logistics solutions from pickup at origin to final delivery. Includes ground transportation, warehousing, and last-mile delivery with real-time tracking throughout.",
 
     // Sea Freight Accordion Content
     "seaFreight.accordion1.title": "Full Container Load (FCL)",
-    "seaFreight.accordion1.content": "Dedicated container services for large shipments with flexible scheduling options. Direct port-to-port delivery with competitive rates for high-volume cargo.",
-    
+    "seaFreight.accordion1.content":
+      "Dedicated container services for large shipments with flexible scheduling options. Direct port-to-port delivery with competitive rates for high-volume cargo.",
+
     "seaFreight.accordion2.title": "Less than Container Load (LCL)",
-    "seaFreight.accordion2.content": "Cost-effective consolidation services for smaller shipments. Share container space with other shippers while maintaining cargo security and tracking capabilities.",
-    
+    "seaFreight.accordion2.content":
+      "Cost-effective consolidation services for smaller shipments. Share container space with other shippers while maintaining cargo security and tracking capabilities.",
+
     "seaFreight.accordion3.title": "Port-to-Port and Door-to-Door",
-    "seaFreight.accordion3.content": "Flexible delivery options including port-to-port services for cost savings or complete door-to-door solutions with inland transportation and customs clearance.",
+    "seaFreight.accordion3.content":
+      "Flexible delivery options including port-to-port services for cost savings or complete door-to-door solutions with inland transportation and customs clearance.",
   },
   ar: {
     // Navigation
@@ -360,16 +473,16 @@ const translations = {
     "hero.title": "نربط أعمالك",
     "hero.titleSpan": "بالعالم",
     "hero.subtitle":
-      "حلول تصدير موثوقة مصممة خصيصاً لاحتياجاتك مع إكسبرس إنترناشيونال",
+      "حلول تصدير موثوقة ومُصممة خصيصاً لتناسب احتياجاتكم مع إكسبرس إنترناشيونال",
     "hero.getQuote": "احصل على عرض سعر",
     "hero.learnMore": "اعرف المزيد",
 
     // About Section
     "about.title": "من نحن",
     "about.description1":
-      "إكسبرس إنترناشيونال هي شركة لوجستية عالمية رائدة مكرسة لربط الشركات حول العالم من خلال حلول شحن موثوقة وفعالة وفعالة من حيث التكلفة. مع أكثر من عقدين من الخبرة، بنينا سمعة متميزة في التجارة الدولية واللوجستيات.",
+      "تُعد إكسبرس إنترناشيونال شركة رائدة في مجال الخدمات اللوجستية العالمية، تعمل على ربط الشركات حول العالم من خلال حلول شحن موثوقة وكفوءة واقتصادية. بخبرة تزيد عن عقدين من الزمن، أسسنا سمعة متميزة في مجال التجارة الدولية والخدمات اللوجستية.",
     "about.description2":
-      "مهمتنا هي تبسيط التجارة العالمية من خلال توفير خدمات تصدير شاملة تمكن الشركات من جميع الأحجام من الوصول إلى أسواق جديدة وتحقيق أهدافها في النمو الدولي.",
+      "تتمثل رسالتنا في تبسيط التجارة العالمية من خلال تقديم خدمات تصدير شاملة تُمكّن الشركات من جميع الأحجام من الوصول إلى أسواق جديدة وتحقيق أهدافها في النمو والتوسع الدولي.",
     "about.yearsExperience": "سنوات من الخبرة",
     "about.countriesServed": "دولة نخدمها",
     "about.tonsExported": "طن مُصدَّر",
@@ -379,24 +492,24 @@ const translations = {
     "services.subtitle": "حلول لوجستية شاملة لأعمالك",
     "services.seaFreight": "الشحن البحري",
     "services.seaFreightDesc":
-      "حلول شحن بحري فعالة من حيث التكلفة للشحنات الكبيرة مع أوقات تسليم موثوقة.",
+      "حلول شحن بحري اقتصادية للشحنات كبيرة الحجم مع ضمان أوقات تسليم موثوقة.",
     "services.airFreight": "الشحن الجوي",
     "services.airFreightDesc":
-      "خدمات شحن جوي سريعة وآمنة للشحنات الحساسة للوقت في جميع أنحاء العالم.",
+      "خدمات شحن جوي سريعة وآمنة للشحنات العاجلة والحساسة زمنياً إلى جميع أنحاء العالم.",
     "services.customs": "التخليص الجمركي والخدمات التنظيمية",
     "services.customsDesc":
-      "خدمات خبيرة في التخليص الجمركي والخدمات التنظيمية شاملة تراخيص الأجهزة الطبية ومستحضرات التجميل والكواشف المعملية.",
+      "خدمات متخصصة في التخليص الجمركي والشؤون التنظيمية، تشمل تراخيص الأجهزة الطبية ومستحضرات التجميل والكواشف المعملية.",
     "services.importOnBehalf": "الاستيراد للغير",
     "services.importOnBehalfDesc":
-      "خدمات استيراد مهنية تمثل مصالح شركتك مع الامتثال التنظيمي الكامل.",
+      "خدمات استيراد احترافية نيابة عن عملائنا مع ضمان الامتثال الكامل للمتطلبات التنظيمية.",
     "services.exportersRegistry": "سجل المصدرين",
     "services.exportersRegistryDesc":
-      "خدمات تسجيل ووثائق شاملة لمتطلبات سجل المصدرين.",
+      "خدمات تسجيل شاملة وإعداد الوثائق المطلوبة لسجل المصدرين.",
     "services.learnMore": "اعرف المزيد",
 
     // Products Section
-    "products.title": "\u200Fمنتجاتنا المصدره",
-    "products.subtitle": "معدات عالية الجودة مُصدَّرة عالمياً",
+    "products.title": "منتجاتنا المُصدَّرة",
+    "products.subtitle": "معدات طبية عالية الجودة نُصدّرها إلى العالم",
     "products.endoscope1.name": "كاميرا منظار عالية الدقة",
     "products.endoscope1.desc":
       "نظام كاميرا منظار عالي الدقة مع تقنية تصوير متقدمة للإجراءات الطبية الدقيقة.",
@@ -415,12 +528,11 @@ const translations = {
     "products.endoscope6.name": "منظار لاسلكي",
     "products.endoscope6.desc":
       "تقنية منظار لاسلكية متطورة لتحسين الحركة والراحة.",
-    
 
     // Global Reach Section
     "global.title": "تغطية شبكة عالمية",
     "global.subtitle":
-      "ربط أكثر من 50 دولة من خلال شراكاتنا الاستراتيجية وشبكتنا اللوجستية المتقدمة",
+      "نربط أكثر من 50 دولة من خلال شراكاتنا الاستراتيجية وشبكتنا اللوجستية المتطورة",
     "global.allRoutes": "جميع الطرق",
     "global.airFreight": "الشحن الجوي",
     "global.seaFreight": "الشحن البحري",
@@ -431,7 +543,7 @@ const translations = {
 
     // Testimonials Section
     "testimonials.title": "ماذا يقول عملاؤنا",
-    "testimonials.subtitle": "موثوق به من قبل الشركات حول العالم",
+    "testimonials.subtitle": "يثق بنا عملاء من جميع أنحاء العالم",
 
     // Contact Section
     "contact.title": "اتصل بنا",
@@ -445,8 +557,8 @@ const translations = {
     "contact.message": "الرسالة",
     "contact.sendMessage": "إرسال الرسالة",
     "contact.businessHours": "ساعات العمل",
-    "contact.whyChoose": "لماذا تختار إكسبرس إنترناشيونال؟",
-    "contact.support247": "دعم العملاء على مدار الساعة",
+    "contact.whyChoose": "لماذا تختارون إكسبرس إنترناشيونال؟",
+    "contact.support247": "دعم العملاء على مدار الساعة طوال أيام الأسبوع",
     "contact.realTimeTracking": "تتبع فوري",
     "contact.competitivePricing": "أسعار تنافسية",
     "contact.globalNetwork": "تغطية شبكة عالمية",
@@ -454,11 +566,12 @@ const translations = {
     // CTA Section
     "cta.title": "دعنا نحرك منتجاتك",
     "cta.subtitle":
-      "هل أنت مستعد لتوسيع أعمالك عالمياً؟ اتصل بإكسبرس إنترناشيونال اليوم للحصول على حل شحن مخصص.",
+      "هل أنتم مستعدون لتوسيع أعمالكم عالمياً؟ تواصلوا مع إكسبرس إنترناشيونال اليوم للحصول على حلول شحن مُصممة خصيصاً لاحتياجاتكم.",
     "cta.requestQuote": "اطلب عرض سعر",
 
     // Footer
-    "footer.description": "شريكك الموثوق لحلول اللوجستيات والتصدير العالمية.",
+    "footer.description":
+      "شريككم الموثوق في حلول الخدمات اللوجستية والتصدير العالمي.",
     "footer.quickLinks": "روابط سريعة",
     "footer.contactInfo": "معلومات الاتصال",
     "footer.followUs": "تابعنا",
@@ -467,9 +580,10 @@ const translations = {
     // Form placeholders
     "form.namePlaceholder": "اسمك الكامل",
     "form.emailPlaceholder": "your@email.com",
-    "form.companyPlaceholder": "اسم شركتك",
+    "form.companyPlaceholder": "اسم الشركة",
     "form.phonePlaceholder": "+966 50 123 4567",
-    "form.messagePlaceholder": "أخبرنا عن متطلبات الشحن الخاصة بك...",
+    "form.messagePlaceholder":
+      "اكتبوا لنا متطلباتكم واحتياجاتكم في مجال الشحن...",
     "form.selectService": "اختر خدمة",
     "form.generalInquiry": "استفسار عام",
 
@@ -489,6 +603,7 @@ const translations = {
     "service.features": "الميزات الرئيسية",
     "service.benefits": "الفوائد",
     "service.process": "عمليتنا",
+    "service.options": "خيارات الخدمة",
     "service.whyChoose": "لماذا تختار خدمتنا؟",
     "service.stats": "إحصائيات الخدمة",
 
@@ -496,17 +611,20 @@ const translations = {
     "seaFreight.title": "خدمات الشحن البحري",
     "seaFreight.subtitle": "حلول شحن بحري شاملة للشركات من جميع الأحجام",
     "seaFreight.description":
-      "تقدم خدمات الشحن البحري لدينا حلول شحن فعالة من حيث التكلفة للشحنات الكبيرة مع أوقات تسليم موثوقة. نقدم خيارات FCL و LCL لتلبية متطلباتك المحددة.",
+      "توفر خدمات الشحن البحري لدينا حلولاً اقتصادية للشحنات كبيرة الحجم مع ضمان أوقات تسليم موثوقة. نقدم خيارات الحاوية الكاملة (FCL) والحاوية الجزئية (LCL) لتلبية متطلباتكم المحددة.",
 
     "seaFreight.step1.title": "الحجز والوثائق",
-    "seaFreight.step1.desc": "قدم تفاصيل البضائع والوثائق المطلوبة للمعالجة.",
+    "seaFreight.step1.desc":
+      "تقديم تفاصيل الشحنة وإعداد الوثائق المطلوبة للمعالجة.",
     "seaFreight.step2.title": "الجمع والتجميع",
-    "seaFreight.step2.desc": "نجمع بضائعك ونجمعها في مرافقنا الآمنة.",
+    "seaFreight.step2.desc": "نقوم بتجميع بضائعكم وتجهيزها في مرافقنا الآمنة.",
     "seaFreight.step3.title": "العبور البحري",
-    "seaFreight.step3.desc": "تسافر بضائعك بأمان عبر المحيط إلى ميناء الوجهة.",
+    "seaFreight.step3.desc":
+      "نقل بضائعكم بأمان عبر الطرق البحرية إلى ميناء الوجهة.",
     "seaFreight.step4.title": "التسليم",
     "seaFreight.step4.desc":
-      "التسليم النهائي إلى وجهتك المحددة مع التتبع الكامل.",
+      "التسليم النهائي إلى الوجهة المحددة مع خدمة تتبع شاملة.",
+    "seaFreight.optionsDesc": "نقدم مجموعة متنوعة من خيارات الشحن لتلبية احتياجاتكم الخاصة.",
 
     "seaFreight.feature1": "خدمات الحاوية الكاملة (FCL)",
     "seaFreight.feature2": "تجميع أقل من حمولة الحاوية (LCL)",
@@ -521,7 +639,7 @@ const translations = {
     "seaFreight.benefit4": "خيارات جدولة مرنة",
 
     "seaFreight.stat1.number": "500+",
-    "seaFreight.stat1.label": "ميناء حول العالم",
+    "seaFreight.stat1.label": "ميناء عالمي",
     "seaFreight.stat2.number": "15,000",
     "seaFreight.stat2.label": "سعة الحاويات",
     "seaFreight.stat3.number": "99.2%",
@@ -531,19 +649,20 @@ const translations = {
     "airFreight.title": "خدمات الشحن الجوي",
     "airFreight.subtitle": "حلول شحن جوي سريعة وموثوقة للشحنات الحساسة للوقت",
     "airFreight.description":
-      "تقدم خدمات الشحن الجوي لدينا أسرع أوقات التسليم لشحناتك العاجلة. مع شركائنا من شركات الطيران العالمية والمناولة ذات الأولوية، نضمن وصول بضائعك إلى وجهتها بسرعة وأمان.",
+      "توفر خدمات الشحن الجوي لدينا أسرع أوقات تسليم لشحناتكم العاجلة. بفضل شراكتنا مع كبريات شركات الطيران العالمية وخدمات المعاملة المتميزة، نضمن وصول بضائعكم إلى وجهتها بسرعة فائقة وبأعلى معايير الأمان.",
 
     "airFreight.step1.title": "الحجز والجدولة",
     "airFreight.step1.desc":
-      "جدولة شحنتك الجوية مع خيارات المناولة ذات الأولوية.",
+      "جدولة شحنتكم الجوية مع خيارات المعاملة ذات الأولوية.",
     "airFreight.step2.title": "الأمان والتعبئة",
-    "airFreight.step2.desc": "التعبئة المهنية والفحص الأمني للنقل الجوي.",
+    "airFreight.step2.desc":
+      "التعبئة المتخصصة والفحص الأمني وفقاً لمعايير الطيران.",
     "airFreight.step3.title": "العبور العالمي",
     "airFreight.step3.desc":
-      "النقل الجوي السريع إلى وجهات حول العالم عبر شركائنا من شركات الطيران.",
+      "النقل الجوي السريع إلى وجهات حول العالم بالتعاون مع شركائنا من كبريات شركات الطيران.",
     "airFreight.step4.title": "التسليم السريع",
     "airFreight.step4.desc":
-      "التسليم السريع إلى الوجهة النهائية مع التتبع في الوقت الفعلي.",
+      "التسليم السريع إلى الوجهة النهائية مع إمكانية التتبع المباشر.",
 
     "airFreight.feature1": "خدمات الشحن الجوي السريع",
     "airFreight.feature2": "خيارات الشحن الجوي القياسية",
@@ -560,28 +679,30 @@ const translations = {
     "airFreight.stat1.number": "200+",
     "airFreight.stat1.label": "شركاء المطارات",
     "airFreight.stat2.number": "48 ساعة",
-    "airFreight.stat2.label": "متوسط العبور",
+    "airFreight.stat2.label": "متوسط زمن الوصول",
     "airFreight.stat3.number": "99.8%",
     "airFreight.stat3.label": "التسليم الآمن",
+
+    "airFreight.optionsDesc": "حلول شحن جوي شاملة مصممة لتلبية احتياجاتكم",
 
     // Customs Documentation Page
     "customs.title": "الجمارك والوثائق",
     "customs.subtitle": "خدمات خبيرة في التخليص الجمركي والوثائق",
     "customs.description":
-      "تضمن خدمات الجمارك والوثائق لدينا التجارة الدولية السلسة مع التوجيه الخبير حول الامتثال وتحسين الرسوم ومعالجة التخليص السريع.",
+      "تضمن خدماتنا في مجال الجمارك والوثائق سير عمليات التجارة الدولية بسلاسة ويسر، مع تقديم الإرشاد المتخصص حول متطلبات الامتثال وتحسين التكاليف وإجراءات التخليص السريع.",
 
     "customs.step1.title": "مراجعة الوثائق",
     "customs.step1.desc":
-      "نراجع جميع وثائق الاستيراد/التصدير الخاصة بك للتأكد من الدقة والامتثال.",
+      "نقوم بمراجعة جميع وثائق الاستيراد والتصدير بدقة لضمان الامتثال الكامل.",
     "customs.step2.title": "تقديم الجمارك",
     "customs.step2.desc":
-      "التقديم المهني للإقرارات الجمركية والتصاريح المطلوبة.",
+      "تقديم الإقرارات الجمركية والتصاريح المطلوبة باحترافية عالية.",
     "customs.step3.title": "حساب الرسوم",
     "customs.step3.desc":
-      "الحساب الدقيق للرسوم والضرائب واتفاقيات التجارة المطبقة.",
+      "حساب دقيق للرسوم والضرائب مع الاستفادة من اتفاقيات التجارة المتاحة.",
     "customs.step4.title": "التخليص والإفراج",
     "customs.step4.desc":
-      "التخليص الجمركي السريع وإفراج البضائع للتسليم اللاحق.",
+      "إتمام عملية التخليص الجمركي بسرعة وإفراج البضائع لاستكمال عملية التسليم.",
 
     "customs.feature1": "وثائق الاستيراد/التصدير",
     "customs.feature2": "معالجة التخليص الجمركي",
@@ -602,67 +723,169 @@ const translations = {
     "customs.stat3.number": "100%",
     "customs.stat3.label": "معدل الامتثال",
 
+    "customs.optionsDesc": "حلول جمركية ووثائقية متكاملة",
+
     // Import on behalf of others Page
     "importOnBehalf.title": "الاستيراد للغير",
     "importOnBehalf.subtitle": "خدمات استيراد مهنية تمثل مصالح شركتك",
-    "importOnBehalf.description": "نقدم خدمات استيراد شاملة نيابة عن الشركات الأخرى، نتعامل مع جميع المتطلبات التنظيمية والوثائق لضمان عمليات التجارة الدولية السلسة.",
-    
+    "importOnBehalf.description":
+      "نوفر خدمات استيراد شاملة ومتطورة نيابة عن عملائنا، حيث نتولى جميع المتطلبات التنظيمية وإعداد الوثائق اللازمة لضمان سير عمليات التجارة الدولية بسلاسة ويسر.",
+
+    "importOnBehalf.step1.title": "الاستشارة المبدئية",
+    "importOnBehalf.step1.desc":
+      "تقييم شامل لمتطلبات الاستيراد والاحتياجات التنظيمية الخاصة بكم.",
+    "importOnBehalf.step2.title": "مراجعة الوثائق",
+    "importOnBehalf.step2.desc":
+      "مراجعة شاملة وإعداد جميع وثائق الاستيراد المطلوبة.",
+    "importOnBehalf.step3.title": "معالجة الجمارك",
+    "importOnBehalf.step3.desc":
+      "التعامل المهني مع التخليص الجمركي والامتثال التنظيمي.",
+    "importOnBehalf.step4.title": "التسليم النهائي",
+    "importOnBehalf.step4.desc":
+      "تنسيق التسليم النهائي إلى الوجهة المحددة من قبلكم.",
+
+    "importOnBehalf.feature1": "الامتثال التنظيمي الكامل",
+    "importOnBehalf.feature2": "التعامل المهني مع الوثائق",
+    "importOnBehalf.feature3": "خبرة التخليص الجمركي",
+    "importOnBehalf.feature4": "إدارة شاملة للاستيراد",
+    "importOnBehalf.feature5": "خدمات تخفيف المخاطر",
+    "importOnBehalf.feature6": "خبرة السوق المحلية",
+
+    "importOnBehalf.benefit1": "تقليل النفقات التشغيلية",
+    "importOnBehalf.benefit2": "الإرشاد التنظيمي المتخصص",
+    "importOnBehalf.benefit3": "تقليل مخاطر الاستيراد",
+    "importOnBehalf.benefit4": "التركيز على الأعمال الأساسية",
+
     "importOnBehalf.accordion1.title": "نظرة عامة على العملية",
-    "importOnBehalf.accordion1.content": "تشمل عملية الاستيراد الشاملة لدينا الاستشارة الأولية ومراجعة الوثائق والتخليص الجمركي وتنسيق التسليم النهائي. نتعامل مع كل خطوة من البداية إلى النهاية.",
-    
+    "importOnBehalf.accordion1.content":
+      "تتضمن عملية الاستيراد الشاملة لدينا عدة مراحل أساسية: الاستشارة المبدئية، ومراجعة الوثائق وإتمام إجراءات التخليص الجمركي، وأخيراً تنسيق عملية التسليم النهائي. نحرص على تولي جميع الخطوات باحترافية عالية.",
+
     "importOnBehalf.accordion2.title": "الوثائق المطلوبة",
-    "importOnBehalf.accordion2.content": "تشمل الوثائق الأساسية الفواتير التجارية وقوائم التعبئة وشهادات المنشأ وتصاريح الاستيراد وأي شهادات خاصة بالمنتج مطلوبة من السلطات المحلية.",
-    
+    "importOnBehalf.accordion2.content":
+      "تشمل الوثائق الأساسية المطلوبة: الفواتير التجارية وقوائم التعبئة التفصيلية، وشهادات المنشأ، وتصاريح الاستيراد، بالإضافة إلى أي شهادات متخصصة خاصة بالمنتجات حسب متطلبات السلطات المحلية ذات الصلة.",
+
     "importOnBehalf.accordion3.title": "الفوائد والمزايا",
-    "importOnBehalf.accordion3.content": "تقليل النفقات التشغيلية وضمان الامتثال التنظيمي والوصول إلى خبرة السوق المحلية وتقليل المخاطر المتعلقة بالاستيراد مع التركيز على أنشطة عملك الأساسية.",
+    "importOnBehalf.accordion3.content":
+      "توفر خدماتنا فوائد جوهرية تتضمن: خفض التكاليف التشغيلية، وضمان الامتثال التنظيمي الكامل، والاستفادة من خبرتنا العميقة في الأسواق المحلية، مع تقليل مخاطر عمليات الاستيراد بما يتيح لكم التركيز على أنشطتكم التجارية الأساسية.",
+
+    "importOnBehalf.optionsDesc":
+      "كل ما تحتاجون لمعرفته عن خدمات الاستيراد لدينا",
 
     // Exporters Registry Page
     "exportersRegistry.title": "سجل المصدرين",
     "exportersRegistry.subtitle": "خدمات تسجيل ووثائق شاملة للمصدرين",
-    "exportersRegistry.description": "نساعد الشركات في التسجيل في سجل المصدرين، نضمن استيفاء جميع الوثائق والمتطلبات للامتثال في التجارة الدولية.",
-    
+    "exportersRegistry.description":
+      "نقدم للشركات المساعدة الكاملة في التسجيل بسجل المصدرين، مع ضمان استيفاء جميع الوثائق والمتطلبات الضرورية للامتثال لمعايير التجارة الدولية.",
+
+    "exportersRegistry.step1.title": "إعداد الطلبات",
+    "exportersRegistry.step1.desc":
+      "إعداد شامل لجميع طلبات التسجيل والنماذج المطلوبة.",
+    "exportersRegistry.step2.title": "تجميع الوثائق",
+    "exportersRegistry.step2.desc":
+      "تجميع منهجي والتحقق من جميع الوثائق الداعمة.",
+    "exportersRegistry.step3.title": "تقديم للجهات",
+    "exportersRegistry.step3.desc":
+      "تقديم مهني للجهات المختصة والهيئات التنظيمية ذات الصلة.",
+    "exportersRegistry.step4.title": "متابعة الموافقة",
+    "exportersRegistry.step4.desc":
+      "متابعة مستمرة وتواصل حتى الحصول على الموافقة النهائية.",
+
+    "exportersRegistry.feature1": "المساعدة الكاملة في الطلبات",
+    "exportersRegistry.feature2": "خدمات التحقق من الوثائق",
+    "exportersRegistry.feature3": "إرشادات الامتثال التنظيمي",
+    "exportersRegistry.feature4": "خدمات الاتصال مع الجهات",
+    "exportersRegistry.feature5": "تتبع الحالة والتحديثات",
+    "exportersRegistry.feature6": "الدعم بعد الموافقة",
+
+    "exportersRegistry.benefit1": "عملية تسجيل مبسطة",
+    "exportersRegistry.benefit2": "إرشادات تنظيمية متخصصة",
+    "exportersRegistry.benefit3": "أوقات موافقة أسرع",
+    "exportersRegistry.benefit4": "ضمان الامتثال",
+
     "exportersRegistry.accordion1.title": "عملية التسجيل",
-    "exportersRegistry.accordion1.content": "تشمل عملية التسجيل المبسطة لدينا إعداد الطلب وتجميع الوثائق والتقديم للسلطات ذات الصلة والمتابعة حتى الحصول على الموافقة.",
-    
+    "exportersRegistry.accordion1.content":
+      "تتميز عملية التسجيل لدينا بالبساطة والفعالية، حيث نبدأ بإعداد طلب التسجيل وتجميع جميع الوثائق المطلوبة، ثم نقوم بالتقديم للجهات المختصة ومتابعة الطلب حتى الحصول على الموافقة النهائية.",
+
     "exportersRegistry.accordion2.title": "متطلبات الأهلية",
-    "exportersRegistry.accordion2.content": "يجب أن تحتوي الشركات على تسجيل تجاري صالح وشهادات التخليص الضريبي وتلبية معايير المنتج أو الخدمة المحددة كما هو محدد في لوائح التصدير المحلية.",
-    
+    "exportersRegistry.accordion2.content":
+      "تشمل متطلبات الأهلية ضرورة امتلاك الشركة لسجل تجاري ساري المفعول، وشهادات التخليص الضريبي المعتمدة، بالإضافة إلى ضرورة استيفاء معايير المنتجات أو الخدمات المحددة وفقاً لما تنص عليه لوائح التصدير المحلية السارية.",
+
     "exportersRegistry.accordion3.title": "الوثائق المطلوبة",
-    "exportersRegistry.accordion3.content": "تشمل الوثائق السجل التجاري وشهادات الضرائب وملف الشركة وكتالوجات المنتجات وشهادات الجودة وأي تراخيص خاصة بالصناعة.",
+    "exportersRegistry.accordion3.content":
+      "تتضمن قائمة الوثائق المطلوبة: السجل التجاري الساري، وشهادات الضرائب المعتمدة، وملف تعريفي شامل للشركة، وكتالوجات مفصلة للمنتجات، وشهادات الجودة المعتمدة، بالإضافة إلى أي تراخيص متخصصة حسب طبيعة الصناعة.",
+
+    "exportersRegistry.optionsDesc": "دليل شامل لتسجيل سجل المصدرين",
 
     // Customs Clearance Sub-services
     "customsClearance.title": "التخليص الجمركي والخدمات التنظيمية",
     "customsClearance.subtitle": "خدمات تنظيمية متخصصة لمختلف الصناعات",
-    "customsClearance.description": "تغطي خدماتنا التنظيمية الشاملة قطاعات متعددة شاملة الأجهزة الطبية ومستحضرات التجميل ومعدات المختبرات مع ضمان الامتثال الكامل.",
-    
+    "customsClearance.description":
+      "تشمل خدماتنا التنظيمية المتخصصة قطاعات متنوعة، تتضمن الأجهزة والمعدات الطبية، ومستحضرات التجميل، ومعدات المختبرات مع ضمان الامتثال الكامل لجميع المعايير.",
+
+    "customsClearance.step1.title": "تقييم الوثائق",
+    "customsClearance.step1.desc":
+      "مراجعة شاملة لجميع الوثائق التنظيمية لضمان متطلبات الامتثال.",
+    "customsClearance.step2.title": "البحث التنظيمي",
+    "customsClearance.step2.desc":
+      "بحث معمق للوائح المعمول بها وعمليات الموافقة المطلوبة.",
+    "customsClearance.step3.title": "معالجة الموافقات",
+    "customsClearance.step3.desc":
+      "التقديم المهني والمتابعة مع السلطات التنظيمية المختصة.",
+    "customsClearance.step4.title": "تسليم الامتثال",
+    "customsClearance.step4.desc":
+      "تسليم الموافقة النهائية مع الدعم المستمر للامتثال.",
+
+    "customsClearance.feature1": "تسجيل الأجهزة الطبية",
+    "customsClearance.feature2": "خدمات الموافقة على مستحضرات التجميل",
+    "customsClearance.feature3": "شهادات الكواشف المعملية",
+    "customsClearance.feature4": "معالجة تصاريح الاستيراد",
+    "customsClearance.feature5": "تقييمات الامتثال للسلامة",
+    "customsClearance.feature6": "خدمات الاستشارات التنظيمية",
+
+    "customsClearance.benefit1": "إرشادات تنظيمية متخصصة",
+    "customsClearance.benefit2": "معالجة أسرع للموافقات",
+    "customsClearance.benefit3": "ضمان الامتثال الكامل",
+    "customsClearance.benefit4": "دعم تنظيمي مستمر",
+
     "customsClearance.accordion1.title": "تسجيل الأجهزة والمستلزمات الطبية",
-    "customsClearance.accordion1.content": "خدمات الموافقات والتسجيل الشاملة للمستلزمات والأجهزة الطبية المعقمة وغير المعقمة، شاملة امتثال FDA ووسم CE وتسجيلات السلطات الصحية المحلية.",
-    
+    "customsClearance.accordion1.content":
+      "نقدم خدمات متكاملة للحصول على الموافقات وإتمام عمليات التسجيل للمستلزمات والأجهزة الطبية (المعقمة وغير المعقمة)،  بالإضافة إلى التسجيل لدى السلطات الصحية المحلية.",
+
     "customsClearance.accordion2.title": "تراخيص وتسجيل مستحضرات التجميل",
-    "customsClearance.accordion2.content": "خدمات تسجيل شاملة لمستحضرات التجميل شاملة تقييمات الأمان وامتثال المكونات ومتطلبات وضع العلامات والتقديمات التنظيمية للسلطات الصحية.",
-    
+    "customsClearance.accordion2.content":
+      "نوفر خدمات تسجيل شاملة ومتطورة لمستحضرات التجميل، تتضمن إجراء تقييمات أمان شاملة وضمان امتثال جميع المكونات للمعايير المطلوبة، واستيفاء متطلبات وضع العلامات والبيانات، بالإضافة إلى إعداد وتقديم جميع المستندات التنظيمية للجهات الصحية المختصة.",
+
     "customsClearance.accordion3.title": "تراخيص وتسجيل الكواشف المعملية",
-    "customsClearance.accordion3.content": "خدمات تسجيل متخصصة للكواشف والمواد الكيميائية المعملية، شاملة صحائف بيانات الأمان وتصاريح الاستيراد والامتثال لمعايير المختبرات.",
+    "customsClearance.accordion3.content":
+      "نقدم خدمات تسجيل متخصصة وعالية الجودة للكواشف والمواد الكيميائية المعملية، تشمل إعداد وتقديم صحائف بيانات الأمان الشاملة، والحصول على تصاريح الاستيراد المطلوبة، وضمان الامتثال الكامل لجميع معايير ومتطلبات المختبرات المعتمدة.",
+
+    "customsClearance.optionsDesc": "خدمات تنظيمية متخصصة عبر صناعات متعددة",
 
     // Air Freight Accordion Content
     "airFreight.accordion1.title": "الشحن العالمي السريع",
-    "airFreight.accordion1.content": "حلول التسليم السريع مع أوقات عبور مضمونة لأكثر من 200 وجهة حول العالم. المناولة ذات الأولوية تضمن وصول شحناتك العاجلة إلى وجهتها بسرعة وأمان.",
-    
+    "airFreight.accordion1.content":
+      "نوفر حلول تسليم سريعة وموثوقة مع أوقات عبور مضمونة إلى أكثر من 200 وجهة حول العالم. تضمن خدمات المعاملة ذات الأولوية وصول شحناتكم العاجلة إلى وجهتها بأقصى سرعة وبأعلى معايير الأمان.",
+
     "airFreight.accordion2.title": "التعامل مع الجمارك",
-    "airFreight.accordion2.content": "خدمات التخليص الجمركي الخبيرة المتكاملة مع عمليات الشحن الجوي. خيارات التخليص المسبق وفرق الجمارك المخصصة تضمن الحد الأدنى من التأخير في مطارات الوجهة.",
-    
+    "airFreight.accordion2.content":
+      "نقدم خدمات تخليص جمركي متخصصة ومتكاملة مع عمليات الشحن الجوي. تشمل خدماتنا خيارات التخليص المسبق وفرق جمركية متخصصة مما يضمن تقليل فترات الانتظار إلى أدنى حد ممكن في مطارات الوجهة.",
+
     "airFreight.accordion3.title": "حلول من الباب إلى الباب",
-    "airFreight.accordion3.content": "حلول لوجستية شاملة من الاستلام في المنشأ إلى التسليم النهائي. تشمل النقل البري والمستودعات وتسليم الميل الأخير مع التتبع في الوقت الفعلي طوال الرحلة.",
+    "airFreight.accordion3.content":
+      "نوفر حلولاً لوجستية متكاملة وشاملة تبدأ من استلام البضائع في المنشأ وتنتهي بالتسليم النهائي. تتضمن خدماتنا النقل البري وخدمات التخزين وعمليات تسليم الميل الأخير، مع إمكانية التتبع المباشر على مدار كامل مراحل الرحلة.",
 
     // Sea Freight Accordion Content
     "seaFreight.accordion1.title": "الحمولة الكاملة للحاوية (FCL)",
-    "seaFreight.accordion1.content": "خدمات الحاويات المخصصة للشحنات الكبيرة مع خيارات جدولة مرنة. التسليم المباشر من ميناء إلى ميناء بأسعار تنافسية للشحن عالي الحجم.",
-    
+    "seaFreight.accordion1.content":
+      "نقدم خدمات حاويات مخصصة ومتطورة للشحنات كبيرة الحجم مع توفير خيارات جدولة زمنية مرنة لتناسب احتياجاتكم. كما نوفر خدمات التسليم المباشر من ميناء إلى آخر بأسعار تنافسية مخصصة للشحنات عالية الحجم.",
+
     "seaFreight.accordion2.title": "أقل من الحمولة الكاملة للحاوية (LCL)",
-    "seaFreight.accordion2.content": "خدمات تجميع فعالة من حيث التكلفة للشحنات الأصغر. مشاركة مساحة الحاوية مع شاحنين آخرين مع الحفاظ على أمان الشحن وقدرات التتبع.",
-    
+    "seaFreight.accordion2.content":
+      "نوفر خدمات تجميع اقتصادية وفعالة مخصصة للشحنات متوسطة وصغيرة الحجم. تتيح هذه الخدمة إمكانية مشاركة مساحة الحاوية مع عملاء آخرين مع الحفاظ التام على أمان بضائعكم وإمكانية التتبع الشامل.",
+
     "seaFreight.accordion3.title": "من ميناء إلى ميناء ومن باب إلى باب",
-    "seaFreight.accordion3.content": "خيارات تسليم مرنة تشمل خدمات من ميناء إلى ميناء لتوفير التكاليف أو حلول شاملة من باب إلى باب مع النقل الداخلي والتخليص الجمركي.",
+    "seaFreight.accordion3.content":
+      "نقدم خيارات تسليم متنوعة ومرنة تشمل خدمات النقل من ميناء إلى آخر للحصول على أفضل قيمة اقتصادية، أو حلولاً متكاملة وشاملة من باب المرسل إلى باب المستقبل، تتضمن خدمات النقل الداخلي وإجراءات التخليص الجمركي.",
   },
 };
 

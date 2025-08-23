@@ -87,6 +87,12 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "د. عمرو عوني",
+    company: "Bestradepharma",
+    text: "شركة ذات مصداقية فى التعامل و سرعة فى التنفيذ و معاملات مالية موثوق فيها. شكرا جزيلا على انجازاتكم السابقة و نتطلع دائما للمزيد مستقبلا",
+    rating: 5
+  },
+  {
     name: "Michael Chen",
     company: "Pacific Imports",
     text: "Outstanding service and competitive rates. The team always goes above and beyond to ensure our shipments arrive on time and in perfect condition.",

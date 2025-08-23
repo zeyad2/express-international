@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Plane, CheckCircle, ArrowRight, ChevronLeft, Clock, Shield, Globe, Zap } from 'lucide-react';
+import { CheckCircle, ArrowRight, ChevronLeft, Clock, Shield, Globe, Zap, Plane } from 'lucide-react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import { useLanguage } from '../contexts/LanguageContext';
 import Accordion, { AccordionItem } from '../components/Accordion';
+import Header from '../components/Header';
 
 const AirFreightPage: React.FC = () => {
   const visibleElements = useIntersectionObserver(0.3);
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const processSteps = [
     {
@@ -71,33 +72,10 @@ const AirFreightPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link 
-                to="/"
-                className="interactive mr-4 p-2 text-blue-800 hover:bg-blue-50 rounded-lg transition-colors"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </Link>
-              <div className="flex items-center">
-                <Plane className="w-8 h-8 text-blue-800 mr-3" />
-                <span className="text-2xl font-bold text-blue-800">Express International</span>
-              </div>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-blue-800 transition-colors">Home</Link>
-              <Link to="/services/sea-freight" className="text-gray-700 hover:text-blue-800 transition-colors">Sea Freight</Link>
-              <Link to="/services/customs-documentation" className="text-gray-700 hover:text-blue-800 transition-colors">Customs</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-cover bg-center bg-no-repeat" 
+      <section className="relative h-96 bg-cover bg-center bg-no-repeat mt-20" 
                style={{
                  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80")'
                }}>
@@ -122,18 +100,18 @@ const AirFreightPage: React.FC = () => {
       {/* About Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className={`grid lg:grid-cols-2 gap-12 items-center ${isRTL ? 'lg:grid-flow-col-dense' : ''}`}>
             <div 
               id="about-image"
               data-animate
               className={`transition-all duration-1000 ${
                 visibleElements.has('about-image') 
                   ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 -translate-x-8'
-              }`}
+                  : `opacity-0 ${isRTL ? 'translate-x-8' : '-translate-x-8'}`
+              } ${isRTL ? 'lg:col-start-2' : ''}`}
             >
               <img 
-                src="https://images.unsplash.com/photo-1583262375606-b69bb2d2b733?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                src="/src/public/images/air-freight.jpg"
                 alt="Cargo aircraft loading"
                 className="rounded-lg shadow-lg"
               />
@@ -144,20 +122,19 @@ const AirFreightPage: React.FC = () => {
               className={`transition-all duration-1000 ${
                 visibleElements.has('about-content') 
                   ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 translate-x-8'
-              }`}
+                  : `opacity-0 ${isRTL ? '-translate-x-8' : 'translate-x-8'}`
+              } ${isRTL ? 'lg:col-start-1' : ''}`}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Speed Meets Reliability</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">{t('airFreight.title')}</h2>
               <p className="text-lg text-gray-700 mb-8">
-                When time is critical, our air freight services deliver. With partnerships across 200+ airports globally, 
-                we provide the fastest and most secure way to transport your valuable cargo anywhere in the world.
+                {t('airFreight.description')}
               </p>
               
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Benefits</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">{t('service.benefits')}</h3>
               <div className="space-y-3">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="w-6 h-6 text-green-600 mr-3 flex-shrink-0" />
+                  <div key={index} className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <CheckCircle className={`w-6 h-6 text-green-600 ${isRTL ? 'ml-3' : 'mr-3'} flex-shrink-0`} />
                     <span className="text-gray-700">{benefit}</span>
                   </div>
                 ))}
@@ -179,8 +156,8 @@ const AirFreightPage: React.FC = () => {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Air Freight Works</h2>
-            <p className="text-xl text-gray-600">Express delivery in four simple steps</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('service.process')}</h2>
+            <p className="text-xl text-gray-600">{t('airFreight.subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -219,8 +196,8 @@ const AirFreightPage: React.FC = () => {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Features</h2>
-            <p className="text-xl text-gray-600">Premium air freight solutions</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('service.features')}</h2>
+            <p className="text-xl text-gray-600">{t('airFreight.subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -254,8 +231,8 @@ const AirFreightPage: React.FC = () => {
             id="accordion-title"
             data-animate
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Solutions</h2>
-            <p className="text-xl text-gray-600">Comprehensive air freight solutions tailored to your needs</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('service.options')}</h2>
+            <p className="text-xl text-gray-600">{t('airFreight.optionsDesc')}</p>
           </div>
 
           <div 
@@ -283,15 +260,15 @@ const AirFreightPage: React.FC = () => {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            <h2 className="text-4xl font-bold mb-6">Ready to ship with Air Freight?</h2>
+            <h2 className="text-4xl font-bold mb-6">{t('service.whyChoose')}</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Experience the fastest shipping solution with our premium air freight services.
+              {t('airFreight.description')}
             </p>
             <Link 
               to="/#contact"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              className={`inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${isRTL ? 'flex-row-reverse' : ''}`}
             >
-              Get Started <ArrowRight className="w-5 h-5" />
+              {t('service.getQuote')} {isRTL ? <ChevronLeft className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />}
             </Link>
           </div>
         </div>
