@@ -28,73 +28,193 @@ const WorldMap: React.FC<WorldMapProps> = ({ isVisible }) => {
         }}
       >
         <SvgDefinitions />
+        
+        {/* Ocean background with texture */}
+        <rect width="1000" height="500" fill="url(#oceanTexture)" opacity="0.8"/>
+        
+        {/* Ocean depth shading */}
+        <defs>
+          <radialGradient id="oceanDepth" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.1"/>
+            <stop offset="70%" stopColor="#0284c7" stopOpacity="0.3"/>
+            <stop offset="100%" stopColor="#0369a1" stopOpacity="0.5"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="500" cy="250" rx="400" ry="200" fill="url(#oceanDepth)"/>
 
         {/* Enhanced continent shapes */}
-        {/* Asia */}
-        <motion.path
-          d="M580,140 Q590,135 610,140 L650,145 Q680,150 720,155 Q760,150 800,160 Q840,170 870,190 Q890,210 900,240 Q895,270 880,300 Q860,330 830,350 Q800,365 760,370 Q720,365 690,350 Q660,330 640,300 Q620,270 610,240 Q600,210 590,180 Q585,160 580,140 Z"
-          fill="url(#asiaGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 0.5 }}
-        />
+        {/* Asia with mountain texture */}
+        <motion.g>
+          <motion.path
+            d="M580,140 Q590,135 610,140 L650,145 Q680,150 720,155 Q760,150 800,160 Q840,170 870,190 Q890,210 900,240 Q895,270 880,300 Q860,330 830,350 Q800,365 760,370 Q720,365 690,350 Q660,330 640,300 Q620,270 610,240 Q600,210 590,180 Q585,160 580,140 Z"
+            fill="url(#mountainTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 0.5 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M720,200 L740,190 M760,210 L780,200 M800,230 L820,220 M650,180 L670,170"
+            stroke="#047857"
+            strokeWidth="1"
+            opacity="0.3"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.3 }}
+            transition={{ duration: 2, delay: 1 }}
+          />
+        </motion.g>
         
-        {/* Middle East */}
-        <motion.path
-          d="M480,190 Q520,185 560,190 Q580,195 590,210 Q595,230 590,250 Q585,270 575,285 Q560,300 540,305 Q520,300 500,290 Q485,275 480,255 Q478,235 480,215 Q482,195 480,190 Z"
-          fill="url(#middleEastGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 0.8 }}
-        />
+        {/* Middle East with desert texture */}
+        <motion.g>
+          <motion.path
+            d="M480,190 Q520,185 560,190 Q580,195 590,210 Q595,230 590,250 Q585,270 575,285 Q560,300 540,305 Q520,300 500,290 Q485,275 480,255 Q478,235 480,215 Q482,195 480,190 Z"
+            fill="url(#desertTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 0.8 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M520,210 L540,205 M550,230 L570,225 M510,250 L530,245"
+            stroke="#b45309"
+            strokeWidth="1"
+            opacity="0.4"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.4 }}
+            transition={{ duration: 2, delay: 1.3 }}
+          />
+        </motion.g>
         
-        {/* Africa */}
-        <motion.path
-          d="M430,210 Q460,205 480,210 Q500,215 515,230 Q525,250 530,275 Q535,300 530,325 Q525,350 515,375 Q505,400 490,420 Q475,435 455,445 Q435,450 415,445 Q395,435 380,415 Q370,395 365,370 Q362,345 365,320 Q370,295 380,275 Q395,255 415,240 Q430,225 430,210 Z"
-          fill="url(#africaGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 1.1 }}
-        />
+        {/* Africa with mixed textures */}
+        <motion.g>
+          <motion.path
+            d="M430,210 Q460,205 480,210 Q500,215 515,230 Q525,250 530,275 Q535,300 530,325 Q525,350 515,375 Q505,400 490,420 Q475,435 455,445 Q435,450 415,445 Q395,435 380,415 Q370,395 365,370 Q362,345 365,320 Q370,295 380,275 Q395,255 415,240 Q430,225 430,210 Z"
+            fill="url(#landTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 1.1 }}
+          />
+          {/* Sahara desert overlay */}
+          <motion.path
+            d="M430,210 Q460,205 480,210 Q500,215 515,230 Q525,240 530,250 Q520,255 500,250 Q480,245 460,240 Q440,235 430,210 Z"
+            fill="url(#desertTexture)"
+            opacity="0.6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.6 }}
+            transition={{ duration: 2, delay: 1.5 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M450,250 L470,245 M490,280 L510,275 M420,350 L440,345 M480,390 L460,395"
+            stroke="#15803d"
+            strokeWidth="1"
+            opacity="0.3"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.3 }}
+            transition={{ duration: 2, delay: 1.6 }}
+          />
+        </motion.g>
         
-        {/* Europe */}
-        <motion.path
-          d="M400,130 Q440,125 480,135 Q520,145 540,165 Q550,185 545,205 Q535,220 520,225 Q500,230 480,225 Q460,220 440,210 Q420,195 410,175 Q405,155 405,135 Q402,125 400,130 Z"
-          fill="url(#europeGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 1.4 }}
-        />
+        {/* Europe with forest texture */}
+        <motion.g>
+          <motion.path
+            d="M400,130 Q440,125 480,135 Q520,145 540,165 Q550,185 545,205 Q535,220 520,225 Q500,230 480,225 Q460,220 440,210 Q420,195 410,175 Q405,155 405,135 Q402,125 400,130 Z"
+            fill="url(#forestTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 1.4 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M430,150 L450,145 M470,160 L490,155 M510,180 L530,175 M440,190 L460,185"
+            stroke="#15803d"
+            strokeWidth="1"
+            opacity="0.4"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.4 }}
+            transition={{ duration: 2, delay: 1.9 }}
+          />
+        </motion.g>
         
-        {/* North America */}
-        <motion.path
-          d="M80,110 Q150,105 220,115 Q280,125 320,150 Q350,175 360,205 Q365,235 350,260 Q330,280 300,290 Q270,295 240,290 Q210,285 180,275 Q150,260 125,240 Q100,220 85,195 Q80,170 80,145 Q82,125 80,110 Z"
-          fill="url(#americaGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 1.7 }}
-        />
+        {/* North America with mixed textures */}
+        <motion.g>
+          <motion.path
+            d="M80,110 Q150,105 220,115 Q280,125 320,150 Q350,175 360,205 Q365,235 350,260 Q330,280 300,290 Q270,295 240,290 Q210,285 180,275 Q150,260 125,240 Q100,220 85,195 Q80,170 80,145 Q82,125 80,110 Z"
+            fill="url(#forestTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 1.7 }}
+          />
+          {/* Mountain ranges */}
+          <motion.path
+            d="M120,140 Q140,135 160,140 Q180,135 200,140 Q220,135 240,140"
+            fill="url(#mountainTexture)"
+            opacity="0.5"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            transition={{ duration: 2, delay: 2.1 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M200,160 L220,155 M250,180 L270,175 M150,220 L170,215 M280,240 L300,235"
+            stroke="#15803d"
+            strokeWidth="1"
+            opacity="0.3"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.3 }}
+            transition={{ duration: 2, delay: 2.2 }}
+          />
+        </motion.g>
         
-        {/* South America */}
-        <motion.path
-          d="M220,290 Q260,285 290,300 Q315,320 330,345 Q340,370 345,395 Q350,420 340,445 Q330,465 315,475 Q295,480 275,475 Q255,465 240,445 Q230,425 225,400 Q222,375 225,350 Q230,325 240,305 Q228,295 220,290 Z"
-          fill="url(#americaGradient)"
-          filter="url(#continentShadow)"
-          className="transition-all duration-300 hover:brightness-110"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 2, delay: 2.0 }}
-        />
+        {/* South America with rainforest texture */}
+        <motion.g>
+          <motion.path
+            d="M220,290 Q260,285 290,300 Q315,320 330,345 Q340,370 345,395 Q350,420 340,445 Q330,465 315,475 Q295,480 275,475 Q255,465 240,445 Q230,425 225,400 Q222,375 225,350 Q230,325 240,305 Q228,295 220,290 Z"
+            fill="url(#forestTexture)"
+            filter="url(#continentShadow)"
+            className="transition-all duration-300 hover:brightness-110"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 2, delay: 2.0 }}
+          />
+          {/* Andes Mountains */}
+          <motion.path
+            d="M250,310 Q255,320 260,330 Q265,340 270,350 Q275,360 280,370 Q285,380 290,390 Q295,400 300,410"
+            stroke="url(#mountainTexture)"
+            strokeWidth="8"
+            opacity="0.6"
+            fill="none"
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 3, delay: 2.3 }}
+          />
+          {/* Country borders */}
+          <motion.path
+            d="M280,320 L290,315 M310,340 L320,335 M270,380 L280,375 M300,420 L310,415"
+            stroke="#15803d"
+            strokeWidth="1"
+            opacity="0.3"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.3 }}
+            transition={{ duration: 2, delay: 2.5 }}
+          />
+        </motion.g>
 
         {/* Air routes with animations */}
         {AIR_ROUTES.map((route, index) => (

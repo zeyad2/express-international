@@ -19,6 +19,7 @@ import useIntersectionObserver from './hooks/useIntersectionObserver';
 import './styles/animations.css';
 import { useLanguage } from './contexts/LanguageContext';
 import ProductsSection from './components/ProductsSection';
+import Partners from './components/Partners';
 import GlobalReach from './components/GlobalReach';
 
 // Home Page Component
@@ -33,6 +34,7 @@ const HomePage: React.FC = () => {
       <Hero visibleElements={visibleElements} />
       <About visibleElements={visibleElements} />
       <Services visibleElements={visibleElements} />
+      <Partners visibleElements={visibleElements} />
       <ProductsSection visibleElements={visibleElements} />
       <GlobalReach visibleElements={visibleElements} />
       <Testimonials visibleElements={visibleElements} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
-import Globe3D from './Globe3D';
+import RealWorldMap from './RealWorldMap';
 import StatsGrid from './StatsGrid';
 
 interface GlobalReachProps {
@@ -44,9 +44,9 @@ const GlobalReach: React.FC<GlobalReachProps> = ({ visibleElements }) => {
           </p>
         </div>
 
-        {/* Interactive 3D Globe */}
+        {/* Interactive Real World Map */}
         <div id="world-map" data-animate>
-          <Globe3D isVisible={isMapVisible} />
+          <RealWorldMap isVisible={isMapVisible} />
         </div>
         
         {/* Stats Grid - Enhanced visibility logic */}
