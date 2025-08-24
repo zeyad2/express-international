@@ -23,7 +23,7 @@ const Founder: React.FC<FounderProps> = ({ visibleElements }) => {
             } ${isRTL ? 'lg:col-start-2' : ''}`}
           >
             <img 
-              src="/src/public/images/founder-image.jpeg" 
+              src="/images/founder-image.jpeg" 
               alt={t('founder.imageAlt')}
               className="w-full h-auto rounded-lg shadow-lg"
             />

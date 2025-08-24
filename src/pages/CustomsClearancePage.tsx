@@ -76,7 +76,7 @@ const CustomsClearancePage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-96 bg-fixed bg-center bg-no-repeat mt-20" 
                style={{
-                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/public/images/Customs-process.jpg")'
+                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Customs-process.jpg")'
                }}>
         <div className="absolute inset-0 flex items-center justify-center">
           <div 
@@ -110,7 +110,7 @@ const CustomsClearancePage: React.FC = () => {
               } ${isRTL ? 'lg:col-start-2' : ''}`}
             >
               <img 
-                src="/src/public/images/DHL_Blog_Zollabwicklung_-scaled-1.jpg"
+                src="/images/DHL_Blog_Zollabwicklung_-scaled-1.jpg"
                 alt="Customs documentation and paperwork"
                 className="rounded-lg shadow-lg"
               />
