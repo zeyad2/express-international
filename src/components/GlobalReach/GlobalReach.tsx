@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
-import RealWorldMap from './RealWorldMap';
+// import RealWorldMap from './RealWorldMap';
 import StatsGrid from './StatsGrid';
 
 interface GlobalReachProps {
@@ -45,9 +45,9 @@ const GlobalReach: React.FC<GlobalReachProps> = ({ visibleElements }) => {
         </div>
 
         {/* Interactive Real World Map */}
-        <div id="world-map" data-animate>
+        {/* <div id="world-map" data-animate>
           <RealWorldMap isVisible={isMapVisible} />
-        </div>
+        </div> */}
         
         {/* Stats Grid - Enhanced visibility logic */}
         <div className="relative z-10">

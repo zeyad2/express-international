@@ -8,10 +8,31 @@ export interface Product {
 
 export const PRODUCTS_DATA: Product[] = [
   {
-    id: 'breastPump-1',
-    name: 'Medical Breast Pump',
-    description: 'Premium quality electric breast pump designed for comfort and efficiency, ideal for nursing mothers.',
-    image: '/src/public/images/breastPump.jpeg',
+    id: 'kn95-mask-1',
+    name: 'KN95 Valve Mask',
+    description: 'High-filtration KN95 respirator mask with breathing valve for enhanced comfort and protection.',
+    image: 'src/public/images/mask.png',
+    category: 'Medical Equipment'
+  },
+  {
+    id: 'elbow-crutch-1',
+    name: 'Elbow Crutch',
+    description: 'Lightweight aluminum elbow crutch with ergonomic design for mobility assistance and rehabilitation.',
+    image: 'src/public/images/elbow-crutch.png',
+    category: 'Medical Equipment'
+  },
+  {
+    id: 'wheelchair-1',
+    name: 'Medical Wheelchair',
+    description: 'Professional-grade wheelchair with adjustable features for patient comfort and mobility.',
+    image: 'src/public/images/wheelchair.png',
+    category: 'Medical Equipment'
+  },
+  {
+    id: 'dental-implant-1',
+    name: 'Dental Implants',
+    description: 'Premium titanium dental implants for tooth replacement and oral rehabilitation procedures.',
+    image: '/src/public/images/implant.png',
     category: 'Medical Equipment'
   },
   {
@@ -36,48 +57,27 @@ export const PRODUCTS_DATA: Product[] = [
     category: 'Medical Equipment'
   },
   {
-    id: 'strips-2',
-    name: 'Diagnostic Test Strips',
-    description: 'Professional-grade test strips for reliable medical diagnostics and health monitoring.',
-    image: '/src/public/images/strips.jpg',
-    category: 'Medical Equipment'
-  },
-  {
-    id: 'medicalDevice1-2',
-    name: 'Precision Medical Equipment',
-    description: 'Advanced diagnostic equipment engineered for accurate medical assessments and patient monitoring.',
-    image: '/src/public/images/download2.png',
-    category: 'Medical Equipment'
-  },
-  {
-    id: 'breastPump-2',
-    name: 'Electric Breast Pump',
-    description: 'High-performance breast pump with adjustable settings for maximum comfort and efficiency.',
+    id: 'breastPump-1',
+    name: 'Medical Breast Pump',
+    description: 'Premium quality electric breast pump designed for comfort and efficiency, ideal for nursing mothers.',
     image: '/src/public/images/breastPump.jpeg',
     category: 'Medical Equipment'
   },
   {
-    id: 'endoscope2-2',
-    name: 'Professional Endoscope',
-    description: 'High-definition endoscopic system with advanced imaging technology for precise medical procedures.',
-    image: '/src/public/images/endoscopy2.png',
+    id: 'kn95-mask-2',
+    name: 'KN95 Protective Mask',
+    description: 'Multi-layer filtration KN95 mask with valve for superior respiratory protection.',
+    image: 'https://images.squarespace-cdn.com/content/v1/5e8b2e8c9c44fa3f1c6e8c93/1588890634559-WDXKN95VALVE-1.jpg',
     category: 'Medical Equipment'
   },
   {
-    id: 'medicalDevice1-3',
-    name: 'Medical Diagnostic System',
-    description: 'Comprehensive medical device for accurate patient diagnostics and clinical assessments.',
-    image: '/src/public/images/download2.png',
-    category: 'Medical Equipment'
-  },
-  {
-    id: 'strips-3',
-    name: 'Clinical Test Strips',
-    description: 'Highly accurate test strips for laboratory-grade medical testing and analysis.',
-    image: '/src/public/images/strips.jpg',
+    id: 'wheelchair-2',
+    name: 'Transport Wheelchair',
+    description: 'Lightweight transport wheelchair designed for patient mobility and caregiver assistance.',
+    image: 'https://www.drivemedical.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/t/r/tr19_transport_chair_blue_main.jpg',
     category: 'Medical Equipment'
   }
-];
+];;;
 
 export const CAROUSEL_CONFIG = {
   AUTO_SCROLL_INTERVAL: 4000,

@@ -22,8 +22,8 @@ export const partners: Partner[] = [
   },
   {
     id: 4,
-    name: "Maersk",
-    logo: "https://cdn.worldvectorlogo.com/logos/maersk.svg"
+    name: "Al Fath Import & Export",
+    logo: "/src/public/images/elfath-logo.png"
   },
   {
     id: 5,
@@ -32,23 +32,23 @@ export const partners: Partner[] = [
   },
   {
     id: 6,
-    name: "CMA CGM",
-    logo: "https://cdn.worldvectorlogo.com/logos/cma-cgm.svg"
+    name: "Maramco",
+    logo: "/src/public/images/maramco-logo.png"
   },
   {
     id: 7,
-    name: "Hapag-Lloyd",
-    logo: "https://cdn.worldvectorlogo.com/logos/hapag-lloyd.svg"
+    name: "EUROPHARMA",
+    logo: "/src/public/images/euro-logo.png"
   },
   {
     id: 8,
-    name: "COSCO",
-    logo: "https://cdn.worldvectorlogo.com/logos/cosco-1.svg"
+    name: "HMA Medical",
+    logo: "/src/public/images/HMA-logo.png"
   },
   {
     id: 9,
-    name: "Amazon",
-    logo: "https://cdn.worldvectorlogo.com/logos/amazon-4.svg"
+    name: "Youssef Allam Group",
+    logo: "/src/public/images/youssefAllam-logo.png"
   },
   {
     id: 10,

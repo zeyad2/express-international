@@ -12,7 +12,8 @@
       "Bash(npm install:*)",
       "WebSearch",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
