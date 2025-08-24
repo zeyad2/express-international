@@ -9,18 +9,23 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import Founder from './components/Founder';
 import SeaFreightPage from './pages/SeaFreightPage';
 import AirFreightPage from './pages/AirFreightPage';
 import CustomsDocumentationPage from './pages/CustomsDocumentationPage';
 import CustomsClearancePage from './pages/CustomsClearancePage';
 import ImportOnBehalfPage from './pages/ImportOnBehalfPage';
 import ExportersRegistryPage from './pages/ExportersRegistryPage';
+import MedicalSuppliesRegistrationPage from './pages/MedicalSuppliesRegistrationPage';
+import CosmeticsRegistrationPage from './pages/CosmeticsRegistrationPage';
+import LabReagentsRegistrationPage from './pages/LabReagentsRegistrationPage';
 import useIntersectionObserver from './hooks/useIntersectionObserver';
 import './styles/animations.css';
 import { useLanguage } from './contexts/LanguageContext';
 import ProductsSection from './components/ProductsSection';
 import Partners from './components/Partners';
 import GlobalReach from './components/GlobalReach';
+import Certificates from './components/Certificates';
 
 // Home Page Component
 const HomePage: React.FC = () => {
@@ -32,14 +37,17 @@ const HomePage: React.FC = () => {
       <AirplaneCursor />
       <Header />
       <Hero visibleElements={visibleElements} />
+      <Services visibleElements={visibleElements}  />
+      <Certificates visibleElements={visibleElements} />
+
       <About visibleElements={visibleElements} />
-      <Services visibleElements={visibleElements} />
       <Partners visibleElements={visibleElements} />
       <ProductsSection visibleElements={visibleElements} />
       <GlobalReach visibleElements={visibleElements} />
       <Testimonials visibleElements={visibleElements} />
       <Contact visibleElements={visibleElements} />
       <CallToAction visibleElements={visibleElements} />
+      <Founder visibleElements={visibleElements} />
       <Footer />
     </div>
   );
@@ -57,6 +65,9 @@ const App: React.FC = () => {
         <Route path="/services/customs-clearance" element={<CustomsClearancePage />} />
         <Route path="/services/import-on-behalf" element={<ImportOnBehalfPage />} />
         <Route path="/services/exporters-registry" element={<ExportersRegistryPage />} />
+        <Route path="/services/medical-supplies-registration" element={<MedicalSuppliesRegistrationPage />} />
+        <Route path="/services/cosmetics-registration" element={<CosmeticsRegistrationPage />} />
+        <Route path="/services/lab-reagents-registration" element={<LabReagentsRegistrationPage />} />
       </Routes>
     </Router>
   );

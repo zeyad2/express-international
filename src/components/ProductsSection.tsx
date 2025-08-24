@@ -241,7 +241,7 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
           }`}
         >
           {[
-            { number: '500+', label: isRTL ? 'منج مُصدَّر' : 'Products Exported', color: 'from-blue-500 to-cyan-500' },
+            { number: '150000+', label: isRTL ? 'منج مُصدَّر' : 'Products Exported', color: 'from-blue-500 to-cyan-500' },
             { number: '50+', label: isRTL ? 'دولة' : 'Countries', color: 'from-red-500 to-pink-500' },
             { number: '99.8%', label: isRTL ? 'رضا العملاء' : 'Customer Satisfaction', color: 'from-green-500 to-emerald-500' },
           ].map((stat, index) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Ship, Plane, FileText, ArrowRight, Users, ClipboardList } from 'lucide-react';
+import { Ship, Plane, FileText, ArrowRight, Users, ClipboardList, Heart, Sparkles, TestTube } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface ServicesProps {
@@ -11,7 +11,7 @@ const Services: React.FC<ServicesProps> = ({ visibleElements }) => {
   const { t, isRTL } = useLanguage();
   
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50 mb-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           id="services-title"
@@ -26,7 +26,7 @@ const Services: React.FC<ServicesProps> = ({ visibleElements }) => {
           <p className="text-xl text-gray-600">{t('services.subtitle')}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
           {/* Sea Freight */}
           <div 
             id="service-1"
@@ -159,6 +159,90 @@ const Services: React.FC<ServicesProps> = ({ visibleElements }) => {
               </p>
               <Link 
                 to="/services/exporters-registry"
+                className={`interactive w-full bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
+              >
+                {t('services.learnMore')} <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Medical Supplies & Devices Registration */}
+          <div 
+            id="service-6"
+            data-animate
+            className={`bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 group ${
+              visibleElements.has('service-6') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1000ms' }}
+          >
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                <Heart className="w-8 h-8 text-blue-800" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('customsClearance.accordion1.title')}</h3>
+              <p className="text-gray-600 mb-6">
+                {t('customsClearance.accordion1.content')}
+              </p>
+              <Link 
+                to="/services/medical-supplies-registration"
+                className={`interactive w-full bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
+              >
+                {t('services.learnMore')} <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Cosmetics Approvals & Registration */}
+          <div 
+            id="service-7"
+            data-animate
+            className={`bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 group ${
+              visibleElements.has('service-7') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1200ms' }}
+          >
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                <Sparkles className="w-8 h-8 text-blue-800" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('customsClearance.accordion2.title')}</h3>
+              <p className="text-gray-600 mb-6">
+                {t('customsClearance.accordion2.content')}
+              </p>
+              <Link 
+                to="/services/cosmetics-registration"
+                className={`interactive w-full bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
+              >
+                {t('services.learnMore')} <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Lab Reagents Approvals & Registration */}
+          <div 
+            id="service-8"
+            data-animate
+            className={`bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 group ${
+              visibleElements.has('service-8') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1400ms' }}
+          >
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                <TestTube className="w-8 h-8 text-blue-800" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('customsClearance.accordion3.title')}</h3>
+              <p className="text-gray-600 mb-6">
+                {t('customsClearance.accordion3.content')}
+              </p>
+              <Link 
+                to="/services/lab-reagents-registration"
                 className={`interactive w-full bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
               >
                 {t('services.learnMore')} <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />

@@ -33,43 +33,21 @@ const About: React.FC<AboutProps> = ({ visibleElements }) => {
             </p>
           </div>
 
-          {/* Illustration */}
+          {/* About Image */}
           <div 
-            id="about-illustration"
-            data-animate
             className={`transition-all duration-1000 ${
-              visibleElements.has('about-illustration') 
+              visibleElements.has('about-content') 
                 ? 'opacity-100 translate-x-0' 
                 : `opacity-0 ${isRTL ? '-translate-x-8' : 'translate-x-8'}`
             } ${isRTL ? 'lg:col-start-1' : ''}`}
           >
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
-              <svg className="w-full h-64" viewBox="0 0 400 300">
-                {/* Global network illustration */}
-                <circle cx="200" cy="150" r="80" fill="none" stroke="#3B82F6" strokeWidth="2" strokeDasharray="5,5">
-                  <animateTransform attributeName="transform" type="rotate" values="0 200 150;360 200 150" dur="20s" repeatCount="indefinite"/>
-                </circle>
-                <circle cx="200" cy="150" r="50" fill="#1E40AF" opacity="0.1" />
-                
-                {/* Connection points */}
-                {[...Array(8)].map((_, i) => {
-                  const angle = (i * 45) * Math.PI / 180;
-                  const x = 200 + 80 * Math.cos(angle);
-                  const y = 150 + 80 * Math.sin(angle);
-                  return (
-                    <g key={i}>
-                      <circle cx={x} cy={y} r="6" fill="#DC2626">
-                        <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" begin={`${i * 0.25}s`}/>
-                      </circle>
-                      <line x1="200" y1="150" x2={x} y2={y} stroke="#3B82F6" strokeWidth="1" opacity="0.5"/>
-                    </g>
-                  );
-                })}
-                
-                <circle cx="200" cy="150" r="8" fill="#1E40AF" />
-              </svg>
-            </div>
+            <img 
+              src="/src/public/images/about-image.jpeg" 
+              alt={t('about.imageAlt')}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
+          
         </div>
 
         {/* Animated Counters */}
@@ -95,6 +73,7 @@ const About: React.FC<AboutProps> = ({ visibleElements }) => {
             <div className="text-gray-600">{t('about.tonsExported')}</div>
           </div>
         </div>
+
       </div>
     </section>
   );

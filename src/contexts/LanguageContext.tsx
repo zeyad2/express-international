@@ -48,6 +48,15 @@ const translations = {
     "about.yearsExperience": "Years of Experience",
     "about.countriesServed": "Countries Served",
     "about.tonsExported": "Tons Exported",
+    "about.imageAlt": "About Express International - Our logistics facilities",
+
+    // Founder Section
+    "founder.title": "Meet Our Founder",
+    "founder.name": "Nabil Abbas",
+    "founder.description1": "With over 25 years of experience in international logistics and trade, Nabil Abbas founded Express International with a vision to simplify global commerce for businesses of all sizes.",
+    "founder.description2": "His deep understanding of regulatory requirements, customs procedures, and international market dynamics has positioned Express International as a trusted partner for companies seeking to expand their global reach.",
+    "founder.quote": "Our success is measured by our clients' ability to reach new markets and achieve their international business goals.",
+    "founder.imageAlt": "Ahmed Hassan - Founder of Express International",
 
     // Services Section
     "services.title": "Our Services",
@@ -58,7 +67,7 @@ const translations = {
     "services.airFreight": "Air Freight",
     "services.airFreightDesc":
       "Fast and secure air cargo services for time-sensitive shipments worldwide.",
-    "services.customs": "Customs Clearance & Regulatory Services",
+    "services.customs": "Customs Clearance",
     "services.customsDesc":
       "Expert customs clearance and regulatory services including medical supplies, cosmetics, and lab reagents approvals.",
     "services.importOnBehalf": "Import on behalf of others",
@@ -486,6 +495,15 @@ const translations = {
     "about.yearsExperience": "سنوات من الخبرة",
     "about.countriesServed": "دولة نخدمها",
     "about.tonsExported": "طن مُصدَّر",
+    "about.imageAlt": "عن إكسبرس إنترناشيونال - مرافقنا اللوجستية",
+
+    // Founder Section
+    "founder.title": "تعرف على مؤسسنا",
+    "founder.name": " نبيل عباس",
+    "founder.description1": "بخبرة تزيد عن 25 عاماً في مجال الخدمات اللوجستية والتجارة الدولية، أسس نبيل عباس شركة إكسبرس إنترناشيونال برؤية واضحة لتبسيط التجارة العالمية للشركات من جميع الأحجام.",
+    "founder.description2": "إن فهمه العميق للمتطلبات التنظيمية وإجراءات الجمارك وديناميكيات السوق الدولية قد وضع إكسبرس إنترناشيونال كشريك موثوق للشركات الساعية للتوسع عالمياً.",
+    "founder.quote": "نقيس نجاحنا بقدرة عملائنا على الوصول إلى أسواق جديدة وتحقيق أهدافهم التجارية الدولية",
+    "founder.imageAlt": "أحمد حسن - مؤسس إكسبرس إنترناشيونال",
 
     // Services Section
     "services.title": "خدماتنا",
@@ -496,7 +514,7 @@ const translations = {
     "services.airFreight": "الشحن الجوي",
     "services.airFreightDesc":
       "خدمات شحن جوي سريعة وآمنة للشحنات العاجلة والحساسة زمنياً إلى جميع أنحاء العالم.",
-    "services.customs": "التخليص الجمركي والخدمات التنظيمية",
+    "services.customs": "التخليص الجمركي",
     "services.customsDesc":
       "خدمات متخصصة في التخليص الجمركي والشؤون التنظيمية، تشمل تراخيص الأجهزة الطبية ومستحضرات التجميل والكواشف المعملية.",
     "services.importOnBehalf": "الاستيراد للغير",
@@ -849,13 +867,13 @@ const translations = {
 
     "customsClearance.accordion1.title": "تسجيل الأجهزة والمستلزمات الطبية",
     "customsClearance.accordion1.content":
-      "نقدم خدمات متكاملة للحصول على الموافقات وإتمام عمليات التسجيل للمستلزمات والأجهزة الطبية (المعقمة وغير المعقمة)،  بالإضافة إلى التسجيل لدى السلطات الصحية المحلية.",
+      "نقدم خدمات متكاملة للحصول على الموافقات وإتمام عمليات التسجيل للمستلزمات والأجهزة الطبية (المعقمة وغير المعقمة) لدى هيئة الدواء المصرية. مع ضمان الامتثال الكامل لجميع المعايير والمتطلبات التنظيمية.",
 
-    "customsClearance.accordion2.title": "تراخيص وتسجيل مستحضرات التجميل",
+    "customsClearance.accordion2.title": "تراخيص وتسجيل جميع مستحضرات التجميل",
     "customsClearance.accordion2.content":
       "نوفر خدمات تسجيل شاملة ومتطورة لمستحضرات التجميل، تتضمن إجراء تقييمات أمان شاملة وضمان امتثال جميع المكونات للمعايير المطلوبة، واستيفاء متطلبات وضع العلامات والبيانات، بالإضافة إلى إعداد وتقديم جميع المستندات التنظيمية للجهات الصحية المختصة.",
 
-    "customsClearance.accordion3.title": "تراخيص وتسجيل الكواشف المعملية",
+    "customsClearance.accordion3.title": "تراخيص وتسجيل جميع الكواشف المعملية",
     "customsClearance.accordion3.content":
       "نقدم خدمات تسجيل متخصصة وعالية الجودة للكواشف والمواد الكيميائية المعملية، تشمل إعداد وتقديم صحائف بيانات الأمان الشاملة، والحصول على تصاريح الاستيراد المطلوبة، وضمان الامتثال الكامل لجميع معايير ومتطلبات المختبرات المعتمدة.",
 
