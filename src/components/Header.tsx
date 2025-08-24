@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}>
             <img
-              src="src\public\images\Logo.png"
+              src="/images/Logo.png"
               className="w-[200px] h-[200px] object-contain -my-20 z-10 py-4"
               alt="Express International Logo"
             />

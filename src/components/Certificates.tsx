@@ -23,8 +23,8 @@ const certificates: Certificate[] = [
     id: 'combined-qeid',
     image: '/images/certificate-3.png',
     title: {
-      en: 'Professional & Compliance Certification',
-      ar: 'شهادة مهنية والامتثال'
+      en: 'Import & export License for sterile & non-sterile Medical Devices',
+      ar: ' ترخيص استيراد وتصدير اجهزه وادوات  طبيه معقمه وغير معقمه'
     },
     description: {
       en: 'Combined professional certification demonstrating our excellence in international trade and compliance with quality standards',
@@ -35,8 +35,8 @@ const certificates: Certificate[] = [
     id: 'kawashef-certificate',
     image: '/images/kawashefCert.png',
     title: {
-      en: 'Kawashef Authorization Certificate',
-      ar: 'شهادة تفويض كواشف'
+      en: 'Import & export License for Lab Reagents',
+      ar: 'ترخيص استيراد وتصدير '
     },
     description: {
       en: 'Official authorization certificate for specialized logistics and customs services',
@@ -47,8 +47,8 @@ const certificates: Certificate[] = [
     id: 'qeid-certificate',
     image: '/images/qeid-certificate.png',
     title: {
-      en: 'QEID Registration Certificate',
-      ar: 'شهادة تسجيل قيد'
+      en: 'Import & export License for Medical Devices',
+      ar: 'شهادة ترخيص استيراد وتصدير اجهزة طبية'
     },
     description: {
       en: 'Official registration certificate for international business operations and regulatory compliance',

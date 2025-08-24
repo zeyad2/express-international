@@ -175,7 +175,6 @@ const translations = {
     "service.process": "Our Process",
     "service.options": "Service Options",
     "service.whyChoose": "Why Choose Our Service?",
-    "service.stats": "Service Statistics",
 
     // Sea Freight Page
     "seaFreight.title": "Sea Freight Services",
@@ -210,12 +209,6 @@ const translations = {
     "seaFreight.benefit3": "Global port network coverage",
     "seaFreight.benefit4": "Flexible scheduling options",
 
-    "seaFreight.stat1.number": "500+",
-    "seaFreight.stat1.label": "Ports Worldwide",
-    "seaFreight.stat2.number": "15,000",
-    "seaFreight.stat2.label": "TEU Capacity",
-    "seaFreight.stat3.number": "99.2%",
-    "seaFreight.stat3.label": "On-time Delivery",
 
     // Air Freight Page
     "airFreight.title": "Air Freight Services",
@@ -249,12 +242,6 @@ const translations = {
     "airFreight.benefit3": "Global airport network",
     "airFreight.benefit4": "Priority handling available",
 
-    "airFreight.stat1.number": "200+",
-    "airFreight.stat1.label": "Airport Partners",
-    "airFreight.stat2.number": "48hrs",
-    "airFreight.stat2.label": "Average Transit",
-    "airFreight.stat3.number": "99.8%",
-    "airFreight.stat3.label": "Safe Delivery",
 
     "airFreight.optionsDesc":
       "Comprehensive air freight solutions tailored to your needs",
@@ -290,12 +277,6 @@ const translations = {
     "customs.benefit3": "Cost optimization",
     "customs.benefit4": "Expert guidance",
 
-    "customs.stat1.number": "50+",
-    "customs.stat1.label": "Countries Covered",
-    "customs.stat2.number": "24hrs",
-    "customs.stat2.label": "Clearance Time",
-    "customs.stat3.number": "100%",
-    "customs.stat3.label": "Compliance Rate",
 
     "customs.optionsDesc": "Complete customs and documentation solutions",
 
@@ -441,6 +422,93 @@ const translations = {
 
     "customsClearance.optionsDesc":
       "Expert regulatory services across multiple industries",
+
+    // Medical Supplies Registration
+    "medicalSupplies.title": "Medical Supplies & Devices Registration",
+    "medicalSupplies.subtitle": "Complete approvals and registration services for medical supplies and devices",
+    "medicalSupplies.description": "Our comprehensive regulatory services for medical devices include sterile and non-sterile equipment registration, quality management system documentation, and full compliance with local health authorities.",
+    
+    "medicalSupplies.step1.title": "Initial Assessment",
+    "medicalSupplies.step1.desc": "Comprehensive evaluation of medical device classification and regulatory requirements.",
+    "medicalSupplies.step2.title": "Documentation Review", 
+    "medicalSupplies.step2.desc": "Thorough review of technical documentation, safety data, and compliance requirements.",
+    "medicalSupplies.step3.title": "Authority Submission",
+    "medicalSupplies.step3.desc": "Professional submission to health authorities with complete documentation packages.",
+    "medicalSupplies.step4.title": "Registration Approval",
+    "medicalSupplies.step4.desc": "Follow-up and support until final approval and registration certificate issuance.",
+    
+    "medicalSupplies.feature1": "Sterile and non-sterile medical devices",
+    "medicalSupplies.feature2": "Class I, II, and III device registrations", 
+    "medicalSupplies.feature3": "CE marking and FDA compliance support",
+    "medicalSupplies.feature4": "Quality management system documentation",
+    "medicalSupplies.feature5": "Clinical evaluation reports",
+    "medicalSupplies.feature6": "Post-market surveillance planning",
+    
+    "medicalSupplies.benefit1": "Expert regulatory guidance",
+    "medicalSupplies.benefit2": "Faster approval processing", 
+    "medicalSupplies.benefit3": "Full compliance assurance",
+    "medicalSupplies.benefit4": "Reduced regulatory risks",
+    
+    "medicalSupplies.ctaTitle": "Ready to Register Your Medical Devices?",
+    "medicalSupplies.ctaDesc": "Get expert assistance with medical device registration and approvals. Contact us today for a consultation.",
+    
+    // Lab Reagents Registration
+    "labReagents.title": "Lab Reagents Approvals & Registration",
+    "labReagents.subtitle": "Specialized registration services for laboratory reagents and chemicals",
+    "labReagents.description": "Our expert team handles all aspects of laboratory reagent registration, including safety assessments, import permits, and compliance with international laboratory standards.",
+    
+    "labReagents.step1.title": "Chemical Analysis",
+    "labReagents.step1.desc": "Comprehensive analysis of laboratory reagents and chemical composition.",
+    "labReagents.step2.title": "Safety Documentation",
+    "labReagents.step2.desc": "Preparation of safety data sheets and hazard assessments.",
+    "labReagents.step3.title": "Laboratory Standards",
+    "labReagents.step3.desc": "Verification of compliance with laboratory and safety standards.",
+    "labReagents.step4.title": "Import Permits",
+    "labReagents.step4.desc": "Processing of import permits and final registration approval.",
+    
+    "labReagents.feature1": "Safety data sheet preparation",
+    "labReagents.feature2": "Import permit processing",
+    "labReagents.feature3": "Laboratory standards compliance",
+    "labReagents.feature4": "Chemical hazard assessments",
+    "labReagents.feature5": "Storage and handling guidelines",
+    "labReagents.feature6": "Waste disposal compliance",
+    
+    "labReagents.benefit1": "Expert regulatory guidance",
+    "labReagents.benefit2": "Streamlined import process",
+    "labReagents.benefit3": "Full safety compliance",
+    "labReagents.benefit4": "Laboratory standards adherence",
+    
+    "labReagents.ctaTitle": "Ready to Register Your Lab Reagents?",
+    "labReagents.ctaDesc": "Get expert assistance with laboratory reagents registration and import permits. Contact us today for a consultation.",
+    
+    // Cosmetics Registration
+    "cosmetics.title": "Cosmetics Approvals & Registration",
+    "cosmetics.subtitle": "Full cosmetics registration services with safety assessments and compliance",
+    "cosmetics.description": "We provide comprehensive cosmetics registration services including safety evaluations, ingredient compliance verification, labeling requirements, and regulatory submissions to health authorities.",
+    
+    "cosmetics.step1.title": "Product Analysis",
+    "cosmetics.step1.desc": "Comprehensive analysis of cosmetic formulations and ingredient safety assessments.",
+    "cosmetics.step2.title": "Documentation Preparation",
+    "cosmetics.step2.desc": "Preparation of safety dossiers, ingredient declarations, and labeling compliance.",
+    "cosmetics.step3.title": "Regulatory Review",
+    "cosmetics.step3.desc": "Expert review of all documentation for compliance with cosmetic regulations.",
+    "cosmetics.step4.title": "Registration Approval",
+    "cosmetics.step4.desc": "Submission to health authorities and follow-up until final approval.",
+    
+    "cosmetics.feature1": "Safety assessments and evaluations",
+    "cosmetics.feature2": "Ingredient compliance verification",
+    "cosmetics.feature3": "Labeling requirements guidance",
+    "cosmetics.feature4": "CPNP (Cosmetic Product Notification Portal) registration",
+    "cosmetics.feature5": "Toxicological evaluations",
+    "cosmetics.feature6": "Post-market surveillance support",
+    
+    "cosmetics.benefit1": "Expert regulatory guidance",
+    "cosmetics.benefit2": "Faster market entry",
+    "cosmetics.benefit3": "Full compliance assurance",
+    "cosmetics.benefit4": "Reduced regulatory risks",
+    
+    "cosmetics.ctaTitle": "Ready to Register Your Cosmetics?",
+    "cosmetics.ctaDesc": "Get expert assistance with cosmetics registration and safety assessments. Contact us today for a consultation.",
 
     // Air Freight Accordion Content
     "airFreight.accordion1.title": "Fast Global Shipping",
@@ -623,7 +691,6 @@ const translations = {
     "service.process": "عمليتنا",
     "service.options": "خيارات الخدمة",
     "service.whyChoose": "لماذا تختار خدمتنا؟",
-    "service.stats": "إحصائيات الخدمة",
 
     // Sea Freight Page
     "seaFreight.title": "خدمات الشحن البحري",
@@ -656,12 +723,6 @@ const translations = {
     "seaFreight.benefit3": "تغطية شبكة الموانئ العالمية",
     "seaFreight.benefit4": "خيارات جدولة مرنة",
 
-    "seaFreight.stat1.number": "500+",
-    "seaFreight.stat1.label": "ميناء عالمي",
-    "seaFreight.stat2.number": "15,000",
-    "seaFreight.stat2.label": "سعة الحاويات",
-    "seaFreight.stat3.number": "99.2%",
-    "seaFreight.stat3.label": "التسليم في الوقت المحدد",
 
     // Air Freight Page
     "airFreight.title": "خدمات الشحن الجوي",
@@ -694,12 +755,6 @@ const translations = {
     "airFreight.benefit3": "شبكة مطارات عالمية",
     "airFreight.benefit4": "المناولة ذات الأولوية متاحة",
 
-    "airFreight.stat1.number": "200+",
-    "airFreight.stat1.label": "شركاء المطارات",
-    "airFreight.stat2.number": "48 ساعة",
-    "airFreight.stat2.label": "متوسط زمن الوصول",
-    "airFreight.stat3.number": "99.8%",
-    "airFreight.stat3.label": "التسليم الآمن",
 
     "airFreight.optionsDesc": "حلول شحن جوي شاملة مصممة لتلبية احتياجاتكم",
 
@@ -734,12 +789,6 @@ const translations = {
     "customs.benefit3": "تحسين التكلفة",
     "customs.benefit4": "التوجيه الخبير",
 
-    "customs.stat1.number": "50+",
-    "customs.stat1.label": "دولة مغطاة",
-    "customs.stat2.number": "24 ساعة",
-    "customs.stat2.label": "وقت التخليص",
-    "customs.stat3.number": "100%",
-    "customs.stat3.label": "معدل الامتثال",
 
     "customs.optionsDesc": "حلول جمركية ووثائقية متكاملة",
 
@@ -904,6 +953,93 @@ const translations = {
     "seaFreight.accordion3.title": "من ميناء إلى ميناء ومن باب إلى باب",
     "seaFreight.accordion3.content":
       "نقدم خيارات تسليم متنوعة ومرنة تشمل خدمات النقل من ميناء إلى آخر للحصول على أفضل قيمة اقتصادية، أو حلولاً متكاملة وشاملة من باب المرسل إلى باب المستقبل، تتضمن خدمات النقل الداخلي وإجراءات التخليص الجمركي.",
+
+    // Medical Supplies Registration Arabic
+    "medicalSupplies.title": "تسجيل الأجهزة والمستلزمات الطبية",
+    "medicalSupplies.subtitle": "خدمات الموافقات والتسجيل الشاملة للأجهزة والمستلزمات الطبية",
+    "medicalSupplies.description": "تشمل خدماتنا التنظيمية الشاملة للأجهزة الطبية تسجيل المعدات المعقمة وغير المعقمة، وإعداد وثائق أنظمة إدارة الجودة، والامتثال الكامل لمتطلبات السلطات الصحية المحلية.",
+    
+    "medicalSupplies.step1.title": "التقييم المبدئي",
+    "medicalSupplies.step1.desc": "تقييم شامل لتصنيف الأجهزة الطبية والمتطلبات التنظيمية.",
+    "medicalSupplies.step2.title": "مراجعة الوثائق",
+    "medicalSupplies.step2.desc": "مراجعة شاملة للوثائق الفنية وبيانات السلامة ومتطلبات الامتثال.",
+    "medicalSupplies.step3.title": "تقديم للجهات المختصة",
+    "medicalSupplies.step3.desc": "تقديم مهني للسلطات الصحية مع حزم وثائق كاملة.",
+    "medicalSupplies.step4.title": "الموافقة على التسجيل",
+    "medicalSupplies.step4.desc": "متابعة ودعم حتى الحصول على الموافقة النهائية وإصدار شهادة التسجيل.",
+    
+    "medicalSupplies.feature1": "الأجهزة الطبية المعقمة وغير المعقمة",
+    "medicalSupplies.feature2": "تسجيل الأجهزة من الفئة الأولى والثانية والثالثة",
+    "medicalSupplies.feature3": "دعم علامة CE والامتثال لإدارة الغذاء والدواء الأمريكية",
+    "medicalSupplies.feature4": "وثائق نظام إدارة الجودة",
+    "medicalSupplies.feature5": "تقارير التقييم السريري",
+    "medicalSupplies.feature6": "تخطيط مراقبة ما بعد التسويق",
+    
+    "medicalSupplies.benefit1": "إرشادات تنظيمية متخصصة",
+    "medicalSupplies.benefit2": "معالجة أسرع للموافقات",
+    "medicalSupplies.benefit3": "ضمان الامتثال الكامل",
+    "medicalSupplies.benefit4": "تقليل المخاطر التنظيمية",
+    
+    "medicalSupplies.ctaTitle": "هل أنتم مستعدون لتسجيل أجهزتكم الطبية؟",
+    "medicalSupplies.ctaDesc": "احصلوا على المساعدة المتخصصة في تسجيل الأجهزة الطبية والموافقات. تواصلوا معنا اليوم للحصول على استشارة.",
+    
+    // Lab Reagents Registration Arabic
+    "labReagents.title": "تراخيص وتسجيل جميع الكواشف المعملية",
+    "labReagents.subtitle": "خدمات تسجيل متخصصة للكواشف والمواد الكيميائية المعملية",
+    "labReagents.description": "يتولى فريقنا المتخصص جميع جوانب تسجيل الكواشف المعملية، بما في ذلك تقييمات السلامة وتصاريح الاستيراد والامتثال للمعايير المعملية الدولية.",
+    
+    "labReagents.step1.title": "التحليل الكيميائي",
+    "labReagents.step1.desc": "تحليل شامل للكواشف المعملية والتركيب الكيميائي.",
+    "labReagents.step2.title": "وثائق السلامة",
+    "labReagents.step2.desc": "إعداد صحائف بيانات السلامة وتقييمات المخاطر.",
+    "labReagents.step3.title": "معايير المختبرات",
+    "labReagents.step3.desc": "التحقق من الامتثال لمعايير المختبرات والسلامة.",
+    "labReagents.step4.title": "تصاريح الاستيراد",
+    "labReagents.step4.desc": "معالجة تصاريح الاستيراد والموافقة النهائية على التسجيل.",
+    
+    "labReagents.feature1": "إعداد صحائف بيانات السلامة",
+    "labReagents.feature2": "معالجة تصاريح الاستيراد",
+    "labReagents.feature3": "الامتثال لمعايير المختبرات",
+    "labReagents.feature4": "تقييمات مخاطر المواد الكيميائية",
+    "labReagents.feature5": "إرشادات التخزين والتعامل",
+    "labReagents.feature6": "الامتثال للتخلص من النفايات",
+    
+    "labReagents.benefit1": "إرشادات تنظيمية متخصصة",
+    "labReagents.benefit2": "عملية استيراد مبسطة",
+    "labReagents.benefit3": "الامتثال الكامل للسلامة",
+    "labReagents.benefit4": "الالتزام بمعايير المختبرات",
+    
+    "labReagents.ctaTitle": "هل أنتم مستعدون لتسجيل كواشفكم المعملية؟",
+    "labReagents.ctaDesc": "احصلوا على المساعدة المتخصصة في تسجيل الكواشف المعملية وتصاريح الاستيراد. تواصلوا معنا اليوم للحصول على استشارة.",
+    
+    // Cosmetics Registration Arabic
+    "cosmetics.title": "تراخيص وتسجيل جميع مستحضرات التجميل",
+    "cosmetics.subtitle": "خدمات تسجيل شاملة لمستحضرات التجميل مع تقييمات السلامة والامتثال",
+    "cosmetics.description": "نوفر خدمات تسجيل شاملة لمستحضرات التجميل تشمل تقييمات السلامة، والتحقق من امتثال المكونات، ومتطلبات وضع العلامات، والتقديمات التنظيمية للسلطات الصحية.",
+    
+    "cosmetics.step1.title": "تحليل المنتج",
+    "cosmetics.step1.desc": "تحليل شامل لتركيبات مستحضرات التجميل وتقييمات سلامة المكونات.",
+    "cosmetics.step2.title": "إعداد الوثائق",
+    "cosmetics.step2.desc": "إعداد ملفات السلامة وإعلانات المكونات والامتثال لوضع العلامات.",
+    "cosmetics.step3.title": "المراجعة التنظيمية",
+    "cosmetics.step3.desc": "مراجعة متخصصة لجميع الوثائق للامتثال للوائح مستحضرات التجميل.",
+    "cosmetics.step4.title": "الموافقة على التسجيل",
+    "cosmetics.step4.desc": "التقديم للسلطات الصحية والمتابعة حتى الحصول على الموافقة النهائية.",
+    
+    "cosmetics.feature1": "تقييمات وتقييمات السلامة",
+    "cosmetics.feature2": "التحقق من امتثال المكونات",
+    "cosmetics.feature3": "إرشادات متطلبات وضع العلامات",
+    "cosmetics.feature4": "تسجيل بوابة إخطار منتجات التجميل (CPNP)",
+    "cosmetics.feature5": "التقييمات السمية",
+    "cosmetics.feature6": "دعم مراقبة ما بعد التسويق",
+    
+    "cosmetics.benefit1": "إرشادات تنظيمية متخصصة",
+    "cosmetics.benefit2": "دخول أسرع للسوق",
+    "cosmetics.benefit3": "ضمان الامتثال الكامل",
+    "cosmetics.benefit4": "تقليل المخاطر التنظيمية",
+    
+    "cosmetics.ctaTitle": "هل أنتم مستعدون لتسجيل مستحضرات التجميل الخاصة بكم؟",
+    "cosmetics.ctaDesc": "احصلوا على المساعدة المتخصصة في تسجيل مستحضرات التجميل وتقييمات السلامة. تواصلوا معنا اليوم للحصول على استشارة.",
   },
 };
 
