@@ -178,11 +178,30 @@ svg path {
   animation: scroll-left 48s linear infinite;
 }
 
+/* RTL-specific keyframes */
+@keyframes scroll-right-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scroll-left-rtl {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 /* RTL-specific animations */
 .rtl .animate-scroll-right {
-  animation: scroll-left 45s linear infinite;
+  animation: scroll-right-rtl 45s linear infinite;
 }
 
 .rtl .animate-scroll-left {
-  animation: scroll-right 48s linear infinite;
+  animation: scroll-left-rtl 48s linear infinite;
 }

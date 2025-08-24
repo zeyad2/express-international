@@ -119,24 +119,6 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, onBack }
               </div>
             </div>
 
-            <div 
-              id="benefits-stats"
-              data-animate
-              className={`transition-all duration-1000 ${
-                visibleElements.has('benefits-stats') 
-                  ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 translate-x-8'
-              }`}
-            >
-              <div className="grid grid-cols-1 gap-6">
-                {currentService.stats.map((stat, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <div className="text-3xl font-bold text-blue-800 mb-2">{stat.number}</div>
-                    <div className="text-gray-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

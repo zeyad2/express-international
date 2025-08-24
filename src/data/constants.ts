@@ -17,11 +17,6 @@ export const serviceDetails = {
       'Global port network coverage',
       'Flexible scheduling options'
     ],
-    stats: [
-      { number: '500+', label: 'Ports Worldwide' },
-      { number: '15,000', label: 'TEU Capacity' },
-      { number: '99.2%', label: 'On-time Delivery' }
-    ]
   },
   'Air Freight': {
     title: 'Air Freight Services',
@@ -40,11 +35,6 @@ export const serviceDetails = {
       'Global airport network',
       'Priority handling available'
     ],
-    stats: [
-      { number: '200+', label: 'Airport Partners' },
-      { number: '48hrs', label: 'Average Transit' },
-      { number: '99.8%', label: 'Safe Delivery' }
-    ]
   },
   'Customs & Documentation': {
     title: 'Customs & Documentation',
@@ -63,11 +53,6 @@ export const serviceDetails = {
       'Cost optimization',
       'Expert guidance'
     ],
-    stats: [
-      { number: '50+', label: 'Countries Covered' },
-      { number: '24hrs', label: 'Clearance Time' },
-      { number: '100%', label: 'Compliance Rate' }
-    ]
   }
 } as const;
 
