@@ -111,7 +111,7 @@ const ImportOnBehalfPage: React.FC = () => {
               } ${isRTL ? 'lg:col-start-2' : ''}`}
             >
               <img 
-                src="/src/public/images/images33.png"
+                src="/images/images33.png"
                 alt="Import consultation and client services"
                 className="rounded-lg shadow-lg"
               />

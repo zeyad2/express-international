@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import seaFreightHero from "../public/images/sea-freight-hero.jpg";
 
 
 import {
@@ -90,7 +89,7 @@ const SeaFreightPage: React.FC = () => {
       <section
         className="relative h-96 bg-cover bg-center bg-no-repeat mt-20"
         style={{
-           backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${seaFreightHero})`,
+           backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/sea-freight-hero.jpg")',
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
@@ -129,7 +128,7 @@ const SeaFreightPage: React.FC = () => {
               } ${isRTL ? "lg:col-start-2" : ""}`}
             >
               <img
-                src="/src/public/images/aerial-view-container-cargo-ship-sea3-1aa63baa.jpeg"
+                src="/images/aerial-view-container-cargo-ship-sea3-1aa63baa.jpeg"
                 alt="Container ship at port"
                 className="rounded-lg shadow-lg"
               />

@@ -18,12 +18,12 @@ export const partners: Partner[] = [
   {
     id: 3,
     name: "Bestredpharma",
-    logo: "/src/public/images/btp-logo.png"
+    logo: "/images/btp-logo.png"
   },
   {
     id: 4,
     name: "Al Fath Import & Export",
-    logo: "/src/public/images/elfath-logo.png"
+    logo: "/images/elfath-logo.png"
   },
   {
     id: 5,
@@ -33,22 +33,22 @@ export const partners: Partner[] = [
   {
     id: 6,
     name: "Maramco",
-    logo: "/src/public/images/maramco-logo.png"
+    logo: "/images/maramco-logo.png"
   },
   {
     id: 7,
     name: "EUROPHARMA",
-    logo: "/src/public/images/euro-logo.png"
+    logo: "/images/euro-logo.png"
   },
   {
     id: 8,
     name: "HMA Medical",
-    logo: "/src/public/images/HMA-logo.png"
+    logo: "/images/HMA-logo.png"
   },
   {
     id: 9,
     name: "Youssef Allam Group",
-    logo: "/src/public/images/youssefAllam-logo.png"
+    logo: "/images/youssefAllam-logo.png"
   },
   {
     id: 10,
@@ -63,6 +63,6 @@ export const partners: Partner[] = [
   {
     id: 12,
     name: "Stark",
-    logo: "/src/public/images/stark-logo.png"
+    logo: "/images/stark-logo.png"
   }
 ];

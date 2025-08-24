@@ -21,7 +21,7 @@ interface Certificate {
 const certificates: Certificate[] = [
   {
     id: 'combined-qeid',
-    image: '/src/public/images/certificate-3.png',
+    image: '/images/certificate-3.png',
     title: {
       en: 'Professional & Compliance Certification',
       ar: 'شهادة مهنية والامتثال'
@@ -33,7 +33,7 @@ const certificates: Certificate[] = [
   },
   {
     id: 'kawashef-certificate',
-    image: '/src/public/images/kawashefCert.png',
+    image: '/images/kawashefCert.png',
     title: {
       en: 'Kawashef Authorization Certificate',
       ar: 'شهادة تفويض كواشف'
@@ -45,7 +45,7 @@ const certificates: Certificate[] = [
   },
   {
     id: 'qeid-certificate',
-    image: '/src/public/images/qeid-certificate.png',
+    image: '/images/qeid-certificate.png',
     title: {
       en: 'QEID Registration Certificate',
       ar: 'شهادة تسجيل قيد'

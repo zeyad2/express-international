@@ -42,7 +42,7 @@ const About: React.FC<AboutProps> = ({ visibleElements }) => {
             } ${isRTL ? 'lg:col-start-1' : ''}`}
           >
             <img 
-              src="/src/public/images/about-image.jpeg" 
+              src="/images/about-image.jpeg" 
               alt={t('about.imageAlt')}
               className="w-full h-auto rounded-lg shadow-lg"
             />

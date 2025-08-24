@@ -11,56 +11,56 @@ export const PRODUCTS_DATA: Product[] = [
     id: 'kn95-mask-1',
     name: 'KN95 Valve Mask',
     description: 'High-filtration KN95 respirator mask with breathing valve for enhanced comfort and protection.',
-    image: 'src/public/images/mask.png',
+    image: '/images/mask.png',
     category: 'Medical Equipment'
   },
   {
     id: 'elbow-crutch-1',
     name: 'Elbow Crutch',
     description: 'Lightweight aluminum elbow crutch with ergonomic design for mobility assistance and rehabilitation.',
-    image: 'src/public/images/elbow-crutch.png',
+    image: '/images/elbow-crutch.png',
     category: 'Medical Equipment'
   },
   {
     id: 'wheelchair-1',
     name: 'Medical Wheelchair',
     description: 'Professional-grade wheelchair with adjustable features for patient comfort and mobility.',
-    image: 'src/public/images/wheelchair.png',
+    image: '/images/wheelchair.png',
     category: 'Medical Equipment'
   },
   {
     id: 'dental-implant-1',
     name: 'Dental Implants',
     description: 'Premium titanium dental implants for tooth replacement and oral rehabilitation procedures.',
-    image: '/src/public/images/implant.png',
+    image: '/images/implant.png',
     category: 'Medical Equipment'
   },
   {
     id: 'endoscope2-1',
     name: 'Flexible Endoscope',
     description: 'Ultra-flexible endoscope with superior maneuverability for complex diagnostic procedures.',
-    image: '/src/public/images/endoscopy2.png',
+    image: '/images/endoscopy2.png',
     category: 'Medical Equipment'
   },
   {
     id: 'medicalDevice1-1',
     name: 'Advanced Medical Device',
     description: 'State-of-the-art medical equipment designed for precision diagnostics and patient care.',
-    image: '/src/public/images/download2.png',
+    image: '/images/download2.png',
     category: 'Medical Equipment'
   },
   {
     id: 'strips-1',
     name: 'Medical Test Strips',
     description: 'High-precision diagnostic test strips for accurate medical testing and patient monitoring.',
-    image: '/src/public/images/strips.jpg',
+    image: '/images/strips.jpg',
     category: 'Medical Equipment'
   },
   {
     id: 'breastPump-1',
     name: 'Medical Breast Pump',
     description: 'Premium quality electric breast pump designed for comfort and efficiency, ideal for nursing mothers.',
-    image: '/src/public/images/breastPump.jpeg',
+    image: '/images/breastPump.jpeg',
     category: 'Medical Equipment'
   },
   {

@@ -76,7 +76,7 @@ const MedicalSuppliesRegistrationPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-96 bg-fixed bg-center bg-no-repeat mt-20" 
                style={{
-                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/public/images/medical-devices.jpg")'
+                 backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/medical-devices.jpg")'
                }}>
         <div className="absolute inset-0 flex items-center justify-center">
           <div 
@@ -148,7 +148,7 @@ const MedicalSuppliesRegistrationPage: React.FC = () => {
               } ${isRTL ? 'lg:col-start-1' : ''}`}
             >
               <img 
-                src="/src/public/images/medical-registration.jpg"
+                src="/images/medical-registration.jpg"
                 alt="Medical device registration process"
                 className="rounded-lg shadow-lg"
               />
