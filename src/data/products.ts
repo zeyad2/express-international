@@ -67,14 +67,14 @@ export const PRODUCTS_DATA: Product[] = [
     id: 'kn95-mask-2',
     name: 'KN95 Protective Mask',
     description: 'Multi-layer filtration KN95 mask with valve for superior respiratory protection.',
-    image: 'https://images.squarespace-cdn.com/content/v1/5e8b2e8c9c44fa3f1c6e8c93/1588890634559-WDXKN95VALVE-1.jpg',
+    image: '/images/mask-2.jpg',
     category: 'Medical Equipment'
   },
   {
     id: 'wheelchair-2',
     name: 'Transport Wheelchair',
-    description: 'Lightweight transport wheelchair designed for patient mobility and caregiver assistance.',
-    image: 'https://www.drivemedical.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/t/r/tr19_transport_chair_blue_main.jpg',
+    description: 'Wheelchair Toilet For The Elderly And The Disabled.',
+    image: '/images/wheelchair2.png',
     category: 'Medical Equipment'
   }
 ];;;

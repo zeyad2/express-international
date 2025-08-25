@@ -1,0 +1,28 @@
+/* Custom Swiper Pagination Styles */
+.products-swiper .swiper-pagination {
+  position: static !important;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.products-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.products-swiper .swiper-pagination-bullet:hover {
+  background-color: #94a3b8;
+  transform: scale(1.1);
+}
+
+.products-swiper .swiper-pagination-bullet-active {
+  background-color: #2563eb !important;
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
