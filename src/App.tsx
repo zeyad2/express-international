@@ -24,7 +24,6 @@ import './styles/animations.css';
 import { useLanguage } from './contexts/LanguageContext';
 import ProductsSection from './components/ProductsSection';
 import Partners from './components/Partners';
-import GlobalReach from './components/GlobalReach';
 import Certificates from './components/Certificates';
 
 // Home Page Component
@@ -43,7 +42,6 @@ const HomePage: React.FC = () => {
       <About visibleElements={visibleElements} />
       <Partners visibleElements={visibleElements} />
       <ProductsSection visibleElements={visibleElements} />
-      <GlobalReach visibleElements={visibleElements} />
       <Testimonials visibleElements={visibleElements} />
       <Contact visibleElements={visibleElements} />
       <CallToAction visibleElements={visibleElements} />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useIntersectionObserver = (threshold: number = 0.8) => {
+export const useIntersectionObserver = (threshold: number = 0.3) => {
   const [visibleElements, setVisibleElements] = useState(new Set<string>());
 
   useEffect(() => {
@@ -19,13 +19,36 @@ export const useIntersectionObserver = (threshold: number = 0.8) => {
           }
         });
       },
-      { threshold }
+      { 
+        threshold: Math.min(threshold, 0.1),
+        rootMargin: '50px 0px -10px 0px'
+      }
     );
 
-    const elements = document.querySelectorAll('[data-animate]');
-    elements.forEach((el) => observer.observe(el));
+    const observeElements = () => {
+      const elements = document.querySelectorAll('[data-animate]');
+      elements.forEach((el) => {
+        if (el.id) {
+          observer.observe(el);
+        }
+      });
+    };
 
-    return () => observer.disconnect();
+    observeElements();
+
+    const mutationObserver = new MutationObserver(() => {
+      observeElements();
+    });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+    };
   }, [threshold]);
 
   return visibleElements;

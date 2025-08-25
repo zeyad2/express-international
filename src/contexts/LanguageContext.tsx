@@ -27,7 +27,6 @@ const translations = {
     "nav.about": "About",
     "nav.services": "Services",
     "nav.products": "Products",
-    "nav.globalReach": "Global Reach",
     "nav.contact": "Contact",
     "nav.getQuote": "Get a Quote",
 
@@ -100,17 +99,6 @@ const translations = {
     "products.endoscope6.desc":
       "Cutting-edge wireless endoscope technology for enhanced mobility and convenience.",
 
-    // Global Reach Section
-    "global.title": "Global Network Coverage",
-    "global.subtitle":
-      "Connecting over 50 countries through our strategic partnerships and advanced logistics network",
-    "global.allRoutes": "All Routes",
-    "global.airFreight": "Air Freight",
-    "global.seaFreight": "Sea Freight",
-    "global.countries": "Countries",
-    "global.cities": "Cities",
-    "global.operations": "Operations",
-    "global.reliability": "Reliability",
 
     // Testimonials Section
     "testimonials.title": "What Our Clients Say",
@@ -157,15 +145,6 @@ const translations = {
     "form.selectService": "Select a service",
     "form.generalInquiry": "General Inquiry",
 
-    // Locations
-    "location.newYork": "New York",
-    "location.london": "London",
-    "location.dubai": "Dubai",
-    "location.singapore": "Singapore",
-    "location.shanghai": "Shanghai",
-    "location.saoPaulo": "São Paulo",
-    "location.lagos": "Lagos",
-    "location.sydney": "Sydney",
 
     // Service Pages Common
     "service.backToServices": "Back to Services",
@@ -542,7 +521,6 @@ const translations = {
     "nav.about": "من نحن",
     "nav.services": "خدماتنا",
     "nav.products": "منتجاتنا",
-    "nav.globalReach": "الوصول العالمي",
     "nav.contact": "اتصل بنا",
     "nav.getQuote": "احصل على عرض سعر",
 
@@ -615,17 +593,6 @@ const translations = {
     "products.endoscope6.desc":
       "تقنية منظار لاسلكية متطورة لتحسين الحركة والراحة.",
 
-    // Global Reach Section
-    "global.title": "تغطية شبكة عالمية",
-    "global.subtitle":
-      "نربط أكثر من 50 دولة من خلال شراكاتنا الاستراتيجية وشبكتنا اللوجستية المتطورة",
-    "global.allRoutes": "جميع الطرق",
-    "global.airFreight": "الشحن الجوي",
-    "global.seaFreight": "الشحن البحري",
-    "global.countries": "دولة",
-    "global.cities": "مدينة",
-    "global.operations": "العمليات",
-    "global.reliability": "الموثوقية",
 
     // Testimonials Section
     "testimonials.title": "ماذا يقول عملاؤنا",
@@ -673,15 +640,6 @@ const translations = {
     "form.selectService": "اختر خدمة",
     "form.generalInquiry": "استفسار عام",
 
-    // Locations
-    "location.newYork": "نيويورك",
-    "location.london": "لندن",
-    "location.dubai": "دبي",
-    "location.singapore": "سنغافورة",
-    "location.shanghai": "شانغهاي",
-    "location.saoPaulo": "ساو باولو",
-    "location.lagos": "لاغوس",
-    "location.sydney": "سيدني",
 
     // Service Pages Common
     "service.backToServices": "العودة إلى الخدمات",
