@@ -64,12 +64,6 @@ const Header: React.FC = () => {
               {t("nav.services")}
             </Link>
             <Link
-              to="/#global-reach"
-              className="interactive text-gray-700 hover:text-blue-800 transition-colors"
-            >
-              {t("nav.globalReach")}
-            </Link>
-            <Link
               to="/#contact"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
@@ -130,13 +124,6 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.services")}
-              </Link>
-              <Link
-                to="/#global-reach"
-                className="interactive text-gray-700 hover:text-blue-800 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("nav.globalReach")}
               </Link>
               <Link
                 to="/#contact"

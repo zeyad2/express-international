@@ -12,7 +12,7 @@ const AirplaneCursor: React.FC = () => {
 
     const handleMouseEnter = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.closest('button, a, .interactive')) {
+      if (target instanceof Element && target.closest('button, a, .interactive')) {
         setIsVisible(true);
       }
     };

@@ -72,7 +72,15 @@ const Certificates: React.FC<CertificatesProps> = ({ visibleElements }) => {
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div 
+          id="certificates-header"
+          data-animate
+          className={`text-center mb-12 transition-all duration-1000 ${
+            visibleElements.has('certificates-header') || isVisible
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 mb-4 ${
             isRTL ? 'font-arabic' : ''
           }`}>
@@ -93,13 +101,15 @@ const Certificates: React.FC<CertificatesProps> = ({ visibleElements }) => {
           {certificates.map((certificate, index) => (
             <div
               key={certificate.id}
+              id={`certificate-${index}`}
+              data-animate
               className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl ${
-                isVisible 
+                visibleElements.has(`certificate-${index}`) || isVisible
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 translate-y-8'
               }`}
               style={{
-                transitionDelay: `${index * 200}ms`
+                transitionDelay: `${index * 100}ms`
               }}
             >
               {/* Certificate Image */}
