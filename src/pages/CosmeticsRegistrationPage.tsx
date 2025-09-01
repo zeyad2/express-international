@@ -4,6 +4,7 @@ import { Sparkles, ChevronLeft, ArrowRight, CheckCircle, Shield, Globe, Zap } fr
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import { useLanguage } from '../contexts/LanguageContext';
 import Header from '../components/Header';
+import { HashLink } from 'react-router-hash-link';
 
 const CosmeticsRegistrationPage: React.FC = () => {
   const visibleElements = useIntersectionObserver(0.3);
@@ -219,12 +220,14 @@ const CosmeticsRegistrationPage: React.FC = () => {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               {t('cosmetics.ctaDesc')}
             </p>
-            <Link 
+
+            <HashLink 
+              smooth
               to="/#contact"
               className={`inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${isRTL ? 'flex-row-reverse' : ''}`}
             >
               {t('service.getQuote')} {isRTL ? <ChevronLeft className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />}
-            </Link>
+            </HashLink>
           </div>
         </div>
       </section>

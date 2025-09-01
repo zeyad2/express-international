@@ -20,7 +20,7 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
 
   // Create product card component
   const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
-    <div className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 h-full flex flex-col border border-gray-100 transition-all duration-1000 delay-200 ${
+    <div className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-1000 transform hover:-translate-y-2 p-6 h-full flex flex-col border border-gray-100  delay-200 ${
       visibleElements.has('products-carousel')
         ? 'opacity-100 translate-y-0'
         : 'opacity-0 translate-y-8'
@@ -89,12 +89,13 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
           }`}
         >
           <Swiper
+            key={isRTL ? 'rtl' : 'ltr'}
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: isRTL ? '.swiper-button-prev' : '.swiper-button-next',
+              prevEl: isRTL ? '.swiper-button-next' : '.swiper-button-prev',
             }}
             pagination={{
               clickable: true,
@@ -134,10 +135,10 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ visibleElements }) =>
           </Swiper>
 
           {/* Custom Navigation Buttons */}
-          <div className="swiper-button-prev !w-12 !h-12 !mt-0 !top-1/2 !-translate-y-1/2 !left-2 !bg-white !rounded-full !shadow-lg hover:!shadow-xl !border-2 !border-blue-100 hover:!border-blue-300 !transition-all !duration-300 !text-blue-600 hover:!bg-blue-50 !flex !items-center !justify-center">
+          <div className={`swiper-button-prev !w-12 !h-12 !mt-0 !top-1/2 !-translate-y-1/2 !bg-white !rounded-full !shadow-lg hover:!shadow-xl !border-2 !border-blue-100 hover:!border-blue-300 !transition-all !duration-300 !text-blue-600 hover:!bg-blue-50 !flex !items-center !justify-center ${isRTL ? '!right-2 !left-auto' : '!left-2 !right-auto'}`}>
           
           </div>
-          <div className="swiper-button-next !w-12 !h-12 !mt-0 !top-1/2 !-translate-y-1/2 !right-2 !bg-white !rounded-full !shadow-lg hover:!shadow-xl !border-2 !border-blue-100 hover:!border-blue-300 !transition-all !duration-300 !text-blue-600 hover:!bg-blue-50 !flex !items-center !justify-center">
+          <div className={`swiper-button-next !w-12 !h-12 !mt-0 !top-1/2 !-translate-y-1/2 !bg-white !rounded-full !shadow-lg hover:!shadow-xl !border-2 !border-blue-100 hover:!border-blue-300 !transition-all !duration-300 !text-blue-600 hover:!bg-blue-50 !flex !items-center !justify-center ${isRTL ? '!left-2 !right-auto' : '!right-2 !left-auto'}`}>
          
           </div>
         </div>

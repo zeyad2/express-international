@@ -99,6 +99,25 @@ const translations = {
     "products.endoscope6.desc":
       "Cutting-edge wireless endoscope technology for enhanced mobility and convenience.",
 
+    // Additional Products
+    "products.kn95Mask.name": "KN95 Valve Mask",
+    "products.kn95Mask.desc": "High-filtration KN95 respirator mask with breathing valve for enhanced comfort and protection.",
+    "products.elbowCrutch.name": "Elbow Crutch",
+    "products.elbowCrutch.desc": "Lightweight aluminum elbow crutch with ergonomic design for mobility assistance and rehabilitation.",
+    "products.wheelchair.name": "Medical Wheelchair",
+    "products.wheelchair.desc": "Professional-grade wheelchair with adjustable features for patient comfort and mobility.",
+    "products.dentalImplant.name": "Dental Implants",
+    "products.dentalImplant.desc": "Premium titanium dental implants for tooth replacement and oral rehabilitation procedures.",
+    "products.medicalDevice.name": "Advanced Medical Device",
+    "products.medicalDevice.desc": "State-of-the-art medical equipment designed for precision diagnostics and patient care.",
+    "products.testStrips.name": "Medical Test Strips",
+    "products.testStrips.desc": "High-precision diagnostic test strips for accurate medical testing and patient monitoring.",
+    "products.breastPump.name": "Medical Breast Pump",
+    "products.breastPump.desc": "Premium quality electric breast pump designed for comfort and efficiency, ideal for nursing mothers.",
+    "products.kn95Mask2.name": "KN95 Protective Mask",
+    "products.kn95Mask2.desc": "Multi-layer filtration KN95 mask with valve for superior respiratory protection.",
+    "products.wheelchair2.name": "Transport Wheelchair",
+    "products.wheelchair2.desc": "Wheelchair Toilet For The Elderly And The Disabled.",
 
     // Testimonials Section
     "testimonials.title": "What Our Clients Say",
@@ -593,6 +612,25 @@ const translations = {
     "products.endoscope6.desc":
       "تقنية منظار لاسلكية متطورة لتحسين الحركة والراحة.",
 
+    // Additional Products
+    "products.kn95Mask.name": "قناع KN95 بصمام",
+    "products.kn95Mask.desc": "قناع تنفس KN95 عالي الترشيح مع صمام تنفس لمزيد من الراحة والحماية.",
+    "products.elbowCrutch.name": "عكاز الكوع",
+    "products.elbowCrutch.desc": "عكاز كوع من الألومنيوم خفيف الوزن بتصميم مريح للمساعدة في الحركة والعلاج الطبيعي.",
+    "products.wheelchair.name": "كرسي متحرك طبي",
+    "products.wheelchair.desc": "كرسي متحرك احترافي مع ميزات قابلة للتعديل لراحة المريض والحركة.",
+    "products.dentalImplant.name": "زراعة الأسنان",
+    "products.dentalImplant.desc": "غرسات أسنان تيتانيوم عالية الجودة لاستبدال الأسنان وإجراءات تأهيل الفم.",
+    "products.medicalDevice.name": "جهاز طبي متقدم",
+    "products.medicalDevice.desc": "معدات طبية حديثة مصممة للتشخيص الدقيق ورعاية المرضى.",
+    "products.testStrips.name": "شرائط فحص طبية",
+    "products.testStrips.desc": "شرائط تشخيص عالية الدقة للفحص الطبي الدقيق ومراقبة المرضى.",
+    "products.breastPump.name": "مضخة حليب طبية",
+    "products.breastPump.desc": "مضخة حليب كهربائية عالية الجودة مصممة للراحة والكفاءة، مثالية للأمهات المرضعات.",
+    "products.kn95Mask2.name": "قناع KN95 واقي",
+    "products.kn95Mask2.desc": "قناع KN95 متعدد الطبقات مع صمام للحماية التنفسية المتفوقة.",
+    "products.wheelchair2.name": "كرسي متحرك للنقل",
+    "products.wheelchair2.desc": "كرسي متحرك مرحاض لكبار السن والمعاقين.",
 
     // Testimonials Section
     "testimonials.title": "ماذا يقول عملاؤنا",
@@ -1008,17 +1046,15 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<Language>("en");
-
-  // Load language from localStorage on mount
-  useEffect(() => {
+  // Initialize language from localStorage or default to "en"
+  const [language, setLanguage] = useState<Language>(() => {
     const savedLanguage = localStorage.getItem("language") as Language;
-    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "ar")) {
-      setLanguage(savedLanguage);
-    }
-  }, []);
+    return savedLanguage && (savedLanguage === "en" || savedLanguage === "ar") 
+      ? savedLanguage 
+      : "en";
+  });
 
-  // Save language to localStorage when it changes
+  // Save language to localStorage when it changes and update document
   useEffect(() => {
     localStorage.setItem("language", language);
 

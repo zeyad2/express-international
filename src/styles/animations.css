@@ -143,13 +143,6 @@ svg path {
   100% { transform: translateX(calc(100vw + 100px)); }
 }
 
-.interactive {
-  cursor: none;
-}
-
-.interactive:hover {
-  cursor: none;
-}
 
 /* Partners scroll animation */
 @keyframes scroll-right {

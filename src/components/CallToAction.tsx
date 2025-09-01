@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { HashLink } from 'react-router-hash-link';
 
 interface CallToActionProps {
   visibleElements: Set<string>;
@@ -24,9 +25,11 @@ const CallToAction: React.FC<CallToActionProps> = ({ visibleElements }) => {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             {t('cta.subtitle')}
           </p>
-          <button className="interactive bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-            {t('cta.requestQuote')}
-          </button>
+          <HashLink smooth to="/">
+            <button className="interactive bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+              {t('cta.requestQuote')}
+            </button>
+          </HashLink>
         </div>
       </div>
     </section>

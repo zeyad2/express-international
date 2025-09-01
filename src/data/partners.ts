@@ -32,8 +32,8 @@ export const partners: Partner[] = [
   },
   {
     id: 6,
-    name: "Maramco",
-    logo: "/images/maramco-logo.png"
+    name: "EUROPHARMA",
+    logo: "/images/euro-logo.png"
   },
   {
     id: 7,
@@ -52,8 +52,8 @@ export const partners: Partner[] = [
   },
   {
     id: 10,
-    name: "Alibaba",
-    logo: "https://cdn.worldvectorlogo.com/logos/alibaba-3.svg"
+    name: "Stark",
+    logo: "/images/stark-logo.png"
   },
   {
     id: 11,
