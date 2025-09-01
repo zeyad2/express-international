@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X} from "lucide-react";
+import { HashLink } from "react-router-hash-link";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
 
@@ -31,13 +32,16 @@ const Header: React.FC = () => {
           }`}
         >
           {/* Logo */}
-          <Link to="/" className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}>
+          <HashLink
+            to="/"
+            className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}
+          >
             <img
               src="/images/Logo.png"
               className="w-[200px] h-[200px] object-contain -my-20 z-10 py-4"
               alt="Express International Logo"
             />
-          </Link>
+          </HashLink>
 
           {/* Desktop Navigation */}
           <nav
@@ -45,30 +49,32 @@ const Header: React.FC = () => {
               isRTL ? "space-x-reverse space-x-8" : "space-x-8"
             }`}
           >
-            <Link
+            <HashLink
+              smooth
               to="/#home"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.home")}
-            </Link>
-            <Link
+            </HashLink>
+
+            <HashLink
               to="/#about"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.about")}
-            </Link>
-            <Link
+            </HashLink>
+            <HashLink
               to="/#services"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.services")}
-            </Link>
-            <Link
+            </HashLink>
+            <HashLink
               to="/#contact"
               className="interactive text-gray-700 hover:text-blue-800 transition-colors"
             >
               {t("nav.contact")}
-            </Link>
+            </HashLink>
           </nav>
 
           {/* Language Toggle & CTA Button */}
@@ -78,9 +84,11 @@ const Header: React.FC = () => {
             }`}
           >
             <LanguageToggle />
-            <button className="interactive bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105">
-              {t("nav.getQuote")}
-            </button>
+            <HashLink smooth to="/#contact">
+              <button className="interactive bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105">
+                {t("nav.getQuote")}
+              </button>
+            </HashLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,43 +112,47 @@ const Header: React.FC = () => {
                 isRTL ? "items-end" : "items-start"
               }`}
             >
-              <Link
+              <HashLink
                 to="/#home"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.home")}
-              </Link>
-              <Link
+              </HashLink>
+              <HashLink
                 to="/#about"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.about")}
-              </Link>
-              <Link
+              </HashLink>
+              <HashLink
                 to="/#services"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.services")}
-              </Link>
-              <Link
+              </HashLink>
+              <HashLink
                 to="/#contact"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("nav.contact")}
-              </Link>
+              </HashLink>
               <div
                 className={`flex items-center gap-3 ${
                   isRTL ? "flex-row-reverse" : ""
                 }`}
               >
                 <LanguageToggle />
+
+                <HashLink to="/#contact" onClick={() => setIsMenuOpen(false)}>
                 <button className="interactive bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors">
                   {t("nav.getQuote")}
                 </button>
+
+                </HashLink>
               </div>
             </nav>
           </div>

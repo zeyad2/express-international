@@ -1,11 +1,16 @@
 /* Custom Swiper Pagination Styles */
-.products-swiper .swiper-pagination {
+.products-swiper .swiper-pagination,
+.testimonials-swiper .swiper-pagination {
   position: static !important;
   margin-top: 2rem;
   text-align: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.products-swiper .swiper-pagination-bullet {
+.products-swiper .swiper-pagination-bullet,
+.testimonials-swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #cbd5e1;
@@ -16,13 +21,37 @@
   opacity: 1;
 }
 
-.products-swiper .swiper-pagination-bullet:hover {
+.products-swiper .swiper-pagination-bullet:hover,
+.testimonials-swiper .swiper-pagination-bullet:hover {
   background-color: #94a3b8;
   transform: scale(1.1);
 }
 
-.products-swiper .swiper-pagination-bullet-active {
+.products-swiper .swiper-pagination-bullet-active,
+.testimonials-swiper .swiper-pagination-bullet-active {
   background-color: #2563eb !important;
   transform: scale(1.2);
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+/* RTL Navigation Button Positioning and Icon Direction */
+[dir="rtl"] .swiper-button-prev {
+  left: auto !important;
+  right: -1.5rem !important;
+  /* transform: scaleX(-1) !important; */
+}
+
+[dir="rtl"] .swiper-button-next {
+  right: auto !important;
+  left: -1.5rem !important;
+  /* transform: scaleX(-1) !important; */
+}
+
+/* Ensure RTL navigation arrows point in correct direction */
+[dir="rtl"] .swiper-button-prev::after {
+  transform: scaleX(-1) !important;
+}
+
+[dir="rtl"] .swiper-button-next::after {
+  transform: scaleX(-1) !important;
 }

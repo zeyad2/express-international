@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AirplaneCursor from './components/AirplaneCursor';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -33,7 +32,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white">
-      <AirplaneCursor />
       <Header />
       <Hero visibleElements={visibleElements} />
       <Services visibleElements={visibleElements}  />
