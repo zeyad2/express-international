@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation,  Autoplay } from 'swiper/modules';
 import { Star, Users } from 'lucide-react';
 import { testimonials } from '../data/constants';
 import { useLanguage } from '../contexts/LanguageContext';
