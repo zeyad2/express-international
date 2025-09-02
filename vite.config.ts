@@ -1,20 +1,20 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    build: {
+  build: {
     rollupOptions: {
-      external: ['react-globe.gl']
-    }
+      external: ["react-globe.gl"],
+    },
   },
   plugins: [react()],
-  publicDir: 'src/public',
+  publicDir: "src/public",
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ["lucide-react"],
+    include: ["react-globe.gl"],
   },
   server: {
     historyApiFallback: true,
   },
-  
 });
