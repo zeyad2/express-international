@@ -38,6 +38,18 @@ const translations = {
     "hero.getQuote": "Get a Quote",
     "hero.learnMore": "Learn More",
 
+    // Premium Hero Section
+    "hero.premium.badge": "Premium Service",
+    "hero.premium.title1": "Express",
+    "hero.premium.title2": "International",
+    "hero.premium.subtitle": "Connecting Worlds Through Innovation",
+    "hero.premium.description": "Experience next-generation logistics with our premium international trade solutions. From complex customs documentation to specialized cargo handling, we deliver excellence at every step.",
+    "hero.premium.cta": "Start Your Journey",
+    "hero.premium.learnMore": "Explore Solutions",
+    "hero.premium.stat1": "500+ Global Partners",
+    "hero.premium.stat2": "99.8% Success Rate",
+    "hero.premium.stat3": "24/7 Support",
+
     // About Section
     "about.title": "Who We Are",
     "about.description1":
@@ -552,6 +564,18 @@ const translations = {
       "حلول تصدير موثوقة ومُصممة خصيصاً لتناسب احتياجاتكم مع إكسبرس إنترناشيونال",
     "hero.getQuote": "احصل على عرض سعر",
     "hero.learnMore": "اعرف المزيد",
+
+    // Premium Hero Section
+    "hero.premium.badge": "خدمة مميزة",
+    "hero.premium.title1": "إكسبرس",
+    "hero.premium.title2": "إنترناشيونال",
+    "hero.premium.subtitle": "ربط العوالم من خلال الابتكار",
+    "hero.premium.description": "استمتع بتجربة الخدمات اللوجستية من الجيل القادم مع حلولنا المميزة للتجارة الدولية. من توثيق الجمارك المعقدة إلى التعامل مع الشحنات المتخصصة، نقدم التميز في كل خطوة.",
+    "hero.premium.cta": "ابدأ رحلتك",
+    "hero.premium.learnMore": "استكشف الحلول",
+    "hero.premium.stat1": "أكثر من 500 شريك عالمي",
+    "hero.premium.stat2": "معدل نجاح 99.8%",
+    "hero.premium.stat3": "دعم على مدار الساعة",
 
     // About Section
     "about.title": "من نحن",

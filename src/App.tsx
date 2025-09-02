@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import PremiumHero from './components/PremiumHero';
 import About from './components/About';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen overflow-x-hidden bg-white">
       <Header />
-      <Hero visibleElements={visibleElements} />
+      <PremiumHero visibleElements={visibleElements} />
       <Services visibleElements={visibleElements}  />
       <Certificates visibleElements={visibleElements} />
 
