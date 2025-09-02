@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -33,6 +32,7 @@ const Header: React.FC = () => {
         >
           {/* Logo */}
           <HashLink
+          smooth
             to="/"
             className={`flex items-center ${isRTL ? "flex-row-reverse" : ""}`}
           >
@@ -52,26 +52,29 @@ const Header: React.FC = () => {
             <HashLink
               smooth
               to="/#home"
-              className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+              className="interactive text-gray-700 hover:text-blue-800 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-800 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
             >
               {t("nav.home")}
             </HashLink>
 
             <HashLink
+            smooth
               to="/#about"
-              className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+              className="interactive text-gray-700 hover:text-blue-800 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-800 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
             >
               {t("nav.about")}
             </HashLink>
             <HashLink
+              smooth
               to="/#services"
-              className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+              className="interactive text-gray-700 hover:text-blue-800 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-800 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
             >
               {t("nav.services")}
             </HashLink>
             <HashLink
+            smooth
               to="/#contact"
-              className="interactive text-gray-700 hover:text-blue-800 transition-colors"
+              className="interactive text-gray-700 hover:text-blue-800 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-800 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
             >
               {t("nav.contact")}
             </HashLink>
@@ -113,6 +116,7 @@ const Header: React.FC = () => {
               }`}
             >
               <HashLink
+              smooth
                 to="/#home"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -120,6 +124,7 @@ const Header: React.FC = () => {
                 {t("nav.home")}
               </HashLink>
               <HashLink
+              smooth
                 to="/#about"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -127,6 +132,7 @@ const Header: React.FC = () => {
                 {t("nav.about")}
               </HashLink>
               <HashLink
+              smooth
                 to="/#services"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -134,6 +140,7 @@ const Header: React.FC = () => {
                 {t("nav.services")}
               </HashLink>
               <HashLink
+              smooth
                 to="/#contact"
                 className="interactive text-gray-700 hover:text-blue-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -147,7 +154,7 @@ const Header: React.FC = () => {
               >
                 <LanguageToggle />
 
-                <HashLink to="/#contact" onClick={() => setIsMenuOpen(false)}>
+                <HashLink smooth to="/#contact" onClick={() => setIsMenuOpen(false)}>
                 <button className="interactive bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors">
                   {t("nav.getQuote")}
                 </button>

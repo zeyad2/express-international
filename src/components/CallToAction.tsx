@@ -25,7 +25,7 @@ const CallToAction: React.FC<CallToActionProps> = ({ visibleElements }) => {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             {t('cta.subtitle')}
           </p>
-          <HashLink smooth to="/">
+          <HashLink smooth to="/#contact">
             <button className="interactive bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
               {t('cta.requestQuote')}
             </button>
