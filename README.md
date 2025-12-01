@@ -27,8 +27,7 @@
 **Express International** is a comprehensive web application for a leading logistics and freight forwarding company. The platform showcases international shipping services, customs documentation, and specialized registration services with a focus on user experience and accessibility.
 
 ### 🎨 **Live Demo**
-*Deployed on Netlify with optimized image handling and performance*
-
+http://expressinternational-eg.com/
 ---
 
 ## ✨ Key Features
@@ -284,5 +283,6 @@ This project showcases professional React development skills and modern web tech
 ### 🚀 **Ready for Production** | 🌐 **Globally Accessible** | 📱 **Mobile Optimized**
 
 *Built with passion using modern web technologies*
+
 
 </div>
